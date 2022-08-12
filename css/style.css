@@ -1,0 +1,29 @@
+/* Colors */
+.bg-black {
+    background-color: black;
+} 
+
+/* Carousel */
+.overlay-dark {
+    filter: brightness(30%);
+}
+.carousel-caption-modified {
+    z-index: 2;
+}
+.text-outline {
+    color: transparent;
+    font-size: 60px;
+    -webkit-text-stroke: 1px white;
+    font-weight: 900;
+}
+.carousel-caption--bold {
+    font-weight: 900;
+    font-size: 50px;
+}
+.fs-small {
+    font-size: 13px;
+}
+.indicator--round {
+    height: 15px;
+    width: 15px;
+}
