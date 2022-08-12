@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - JMJ Sports center</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        .overlay-dark {
+            filter: brightness(30%);
+        }
+        .carousel-caption-modified {
+            z-index: 2;
+        }
+        .text-outline {
+            color: transparent;
+            font-size: 60px;
+            -webkit-text-stroke: 1px white;
+            font-weight: 900;
+        }
+        .carousel-caption--bold {
+            font-weight: 900;
+            font-size: 50px;
+        }
+        .fs-small {
+            font-size: 13px;
+        }
+        .indicator--round {
+            height: 15px;
+            width: 15px;
+        }
+        .bg-black {
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4">
+        <div class="container p-0">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarScroll">
+            <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <i class="fa fa-search text-success"></i>
+            <button class="btn btn-outline-success border-2 ms-2 px-4 py-0 fs-6 text-nowrap"> SIGN UP </button>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div style="max-height: 500px; overflow: hidden;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Caption -->
+            <div class="container carousel-caption carousel-caption-modified text-start lh-1 d-none d-sm-block start-0 end-0 p-0">
+                <p class="text-outline m-0">PERFECT WORKOUT</p>
+                <p class="carousel-caption--bold">FIND YOUR BODY</p>
+                <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum voluptas non nihil neque molestiae soluta fugit provident earum inventore.</p>
+                <button class="btn btn-outline-success border-2 py-0 fs-small fw-bold">LET'S TRAIN</button>
+            </div>            
+            <!-- Carousel Indicators -->
+            <div class="container carousel-indicators justify-content-end m-0 end-0 mb-3">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle bg-success" style="height: 15px; width: 15px;" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle bg-success" style="height: 15px; width: 15px;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="rounded-circle bg-success" style="height: 15px; width: 15px;"></button>
+            </div>
+
+            <!-- Carousel Background -->
+            <div class="carousel-inner overlay-dark" style="max-height: 70vh;">
+              <div class="carousel-item h-100 active">
+                <img src="img/alexander-redl-d3bYmnZ0ank-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/victor-freitas-WvDYdXDzkhs-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Excerpt -->
+    <section class="container overflow-scroll">
+        <ul class="row list-unstyled" style="min-width: 100vw;">
+            <li class="col-sm-3 text-white d-flex justify-content-center p-0"><video src="vid/mixkit-man-exercising-with-a-kettlebell-4506.mp4" class="w-100" autoplay></video></li>
+            <li class="col-sm-3 bg-success text-white text-center py-3">
+                <header class="fs-3 fw-bolder">HEALTH</header>
+                <body>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, assumenda!
+                </body>
+            </li>
+            <li class="col-sm-3 bg-success text-white text-center py-3">
+                <header class="fs-3 fw-bolder">FITNESS</header>
+                <body>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, assumenda!
+                </body>
+            </li>
+            <li class="col-sm-3 bg-success text-white text-center py-3">
+                <header class="fs-3 fw-bolder">WORKOUT</header>
+                <body>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, assumenda!
+                </body>
+            </li>
+        </ul>
+    </section>
+
+    <!-- About us -->
+    <section class="container text-white mt-5">
+        <article class="row">
+            <div class="col-sm-6">
+                <p class="small">WHO ARE WE</p>
+                <p class="fs-2 fw-bolder lh-sm">GIVE A SHAPE OF YOUR BODY</p>
+                <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis at ipsum, repellendus officiis quaerat consequuntur quia magni veritatis? Aliquid?</p>
+                
+                <!-- Media -->
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <div class="bg-success rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                            <i class="fas fa-person-booth"></i>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <header class="fs-6 fw-bolder">GROWTH</header>
+                        <p class="small">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                    </div>
+                </div>
+                
+                <!-- Left -->
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <div class="bg-success rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <header class="fs-6 fw-bolder">GROWTH</header>
+                        <p class="small">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <div class="bg-success rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                            <i class="fas fa-running"></i>                        
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <header class="fs-6 fw-bolder">GROWTH</header>
+                        <p class="small">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="col-sm-6 d-flex justify-content-end">
+                <div class="bg-success rounded w-50" style="height: 20px;"></div>
+            </div>
+        </article>
+    </section>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
