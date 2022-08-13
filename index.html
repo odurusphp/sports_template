@@ -13,7 +13,7 @@
 <body class="bg-black">
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4">
-        <div class="container p-0">
+        <div class="container">
           <a class="navbar-brand" href="#">Navbar scroll</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
     <div style="max-height: 500px; overflow: hidden;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <!-- Carousel Caption -->
-            <div class="container carousel-caption carousel-caption-modified text-start lh-1 d-none d-sm-block start-0 end-0 p-0">
+            <div class="container carousel-caption carousel-caption-modified text-start lh-1 d-none d-sm-block start-0 end-0">
                 <p class="text-outline m-0">PERFECT WORKOUT</p>
                 <p class="carousel-caption--bold">FIND YOUR BODY</p>
                 <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum voluptas non nihil neque molestiae soluta fugit provident earum inventore.</p>
@@ -77,7 +77,7 @@
     <!-- Excerpt -->
     <section class="container overflow-scroll">
         <ul class="row list-unstyled" style="min-width: 100vw;">
-            <li class="col-sm-3 text-white d-flex justify-content-center p-0"><video src="vid/mixkit-man-exercising-with-a-kettlebell-4506.mp4" class="w-100" autoplay></video></li>
+            <li class="col-sm-3 text-white d-flex justify-content-center p-0"><video src="vid/mixkit-man-exercising-with-a-kettlebell-4506.mp4" class="w-100" autoplay loop></video></li>
             <li class="col-sm-3 bg-success text-white text-center py-3">
                 <header class="fs-3 fw-bolder">HEALTH</header>
                 <body>
@@ -101,8 +101,8 @@
 
     <!-- About us -->
     <section class="container text-white mt-5">
-        <article class="row">
-            <div class="col-sm-6">
+        <article class="row mb-5 gx-5">
+            <div class="col-md-6">
                 <p class="small">WHO ARE WE</p>
                 <p class="fs-2 fw-bolder lh-sm">GIVE A SHAPE OF YOUR BODY</p>
                 <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis at ipsum, repellendus officiis quaerat consequuntur quia magni veritatis? Aliquid?</p>
@@ -147,11 +147,72 @@
             </div>
 
             <!-- Right -->
-            <div class="col-sm-6 d-flex justify-content-end">
-                <div class="bg-success rounded w-50" style="height: 20px;"></div>
-                <img src="img/victor-freitas-WvDYdXDzkhs-unsplash.jpg" alt="">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-end w-sm-100">
+                <div class="bg-success rounded w-50 mb-3" style="height: 20px;"></div>
+                <img src="img/victor-freitas-WvDYdXDzkhs-unsplash.jpg" class="w-100 rounded-3" alt="">
+                <button class="btn btn-outline-success mt-3"><span class="small">CONSULTATION</span></button>
             </div>
         </article>
+        
+        <article class="row mb-5 gx-5">
+            <!-- right -->
+            <div class="col-md-6 order-md-2">
+                <p class="small mb-1 fw-light">WHO ARE WE</p>
+                <p class="mb-1 fw-bold">WE ALWAYS PROVIDE</p>
+                <p class="fs-2 fw-bolder lh-sm m-0">BEST SPORTS CENTERS FOR OVER 20 YEARS</p>
+                <p class="small lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, totam laborum, dolorum eum possimus consequuntur modi enim perspiciatis doloremque voluptatum soluta est corporis excepturi vel incidunt quisquam nobis minima nam. Atque blanditiis, maiores molestias facilis animi dignissimos libero modi ad, est iure ex omnis ut? Molestiae quam nemo pariatur vel.</p>
+            </div>
+
+            <!-- left -->
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-end w-sm-100">
+                <img src="img/victor-freitas-WvDYdXDzkhs-unsplash.jpg" class="w-100 rounded-3" alt="">
+            </div>
+        </article>
+    </section>
+
+    <section class="container-flud bg-success w-100 mb-5">
+        <div class="container overflow-scroll">
+            <ul class="row list-unstyled m-0" style="min-width: 100vw;">
+                <li class="col-sm-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">9</span> <p class="small">Services offered</p></li>
+                <li class="col-sm-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">10</span> <p class="small">Training Programs</p></li>
+                <li class="col-sm-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">2230</span> <p class="small">Happy Clients</p></li>
+                <li class="col-sm-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">2230</span> <p class="small">Since we started</p></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Popular Exercise -->
+    <section class="container text-white">
+        <p class="h3 fw-bolder">Popular Exercise</p>
+        <div class="row w-100">
+            <div class="col w-sm-100" style="max-width: 250px;">
+                <div class="card">
+                    <img src="img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-sm-100" style="max-width: 250px;">
+                <div class="card">
+                    <img src="img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-sm-100" style="max-width: 250px;">
+                <div class="card">
+                    <img src="img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="js/bootstrap.js"></script>
