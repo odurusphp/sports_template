@@ -5,6 +5,9 @@
 .bg-success {
     background-color: #0db93e;
   }
+.container {
+    overflow: hidden;
+}
 
 /* Colors */
 .bg-black {
