@@ -12,14 +12,14 @@
 </head>
 <body class="bg-black">
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4 bg-dark bg-opacity-25">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4 bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 8rem;" alt=""></a>
+            <a class="navbar-brand navbar-brand-modified" href="#"><img src="img/logo.png" class="w-100" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarScroll">
-            <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: auto;">
               <li class="nav-item me-lg-4">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -56,10 +56,12 @@
                 <button class="btn btn-outline-success border-2 py-0 fs-small fw-bold">LET'S TRAIN</button>
             </div>            
             <!-- Carousel Indicators -->
-            <div class="container carousel-indicators justify-content-end m-0 end-0 mb-3">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle bg-success" style="height: 15px; width: 15px;" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle bg-success" style="height: 15px; width: 15px;"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="rounded-circle bg-success" style="height: 15px; width: 15px;"></button>
+            <div class="carousel-indicators  m-0 end-0 mb-3">
+                <div class="container d-flex justify-content-end">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle bg-green" style="height: 15px; width: 15px;" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle bg-green" style="height: 15px; width: 15px;"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="rounded-circle bg-green" style="height: 15px; width: 15px;"></button>
+                </div>
             </div>
 
             <!-- Carousel Background -->
@@ -80,25 +82,25 @@
     <!-- Excerpt -->
     <section class="container">
         <ul class="row list-unstyled">
-            <li class="col-md-3 text-white d-flex justify-content-center p-0"><video src="vid/mixkit-man-exercising-with-a-kettlebell-4506.mp4" class="w-100" autoplay loop></video></li>
-            <li class="col-md-3 bg-success text-white text-center py-3">
+            <li class="col-md-3 bg-green text-white text-center py-3">
                 <header class="fs-3 fw-bolder">HEALTH</header>
                 <body>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, assumenda!
                 </body>
             </li>
-            <li class="col-md-3 bg-success text-white text-center py-3">
+            <li class="col-md-3 bg-green text-white text-center py-3">
                 <header class="fs-3 fw-bolder">FITNESS</header>
                 <body>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, assumenda!
                 </body>
             </li>
-            <li class="col-md-3 bg-success text-white text-center py-3">
+            <li class="col-md-3 bg-green text-white text-center py-3">
                 <header class="fs-3 fw-bolder">WORKOUT</header>
                 <body>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, assumenda!
                 </body>
             </li>
+            <li class="col-md-3 text-white d-flex justify-content-center p-0 order-md-first"><video src="vid/mixkit-man-exercising-with-a-kettlebell-4506.mp4" class="w-100" autoplay loop></video></li>
         </ul>
     </section>
 
@@ -113,7 +115,7 @@
                 <!-- Media -->
                 <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                        <div class="bg-success rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                        <div class="bg-green rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
                             <i class="fas fa-person-booth"></i>
                         </div>
                     </div>
@@ -126,7 +128,7 @@
                 <!-- Left -->
                 <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                        <div class="bg-success rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                        <div class="bg-green rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
                             <i class="fas fa-dumbbell"></i>
                         </div>
                     </div>
@@ -138,7 +140,7 @@
 
                 <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                        <div class="bg-success rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                        <div class="bg-green rounded d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
                             <i class="fas fa-running"></i>                        
                         </div>
                     </div>
@@ -151,7 +153,7 @@
 
             <!-- Right -->
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-end w-sm-100">
-                <div class="bg-success rounded w-50 mb-3" style="height: 20px;"></div>
+                <div class="bg-green rounded w-50 mb-3" style="height: 20px;"></div>
                 <img src="img/victor-freitas-WvDYdXDzkhs-unsplash.jpg" class="w-100 rounded-3" alt="">
                 <button class="btn btn-outline-success mt-3"><span class="small">CONSULTATION</span></button>
             </div>
@@ -173,13 +175,13 @@
         </article>
     </section>
 
-    <section class="container-flud bg-success mb-5">
+    <section class="container-fluid bg-green mb-5">
         <div class="container">
             <ul class="row list-unstyled justify-content-center">
-                <li class="col-md-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">9</span> <p class="small">Services offered</p></li>
-                <li class="col-md-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">10</span> <p class="small">Training Programs</p></li>
-                <li class="col-md-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">2230</span> <p class="small">Happy Clients</p></li>
-                <li class="col-md-3 bg-success text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">2230</span> <p class="small">Since we started</p></li>
+                <li class="col-md-3 bg-green text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">9</span> <p class="small">Services offered</p></li>
+                <li class="col-md-3 bg-green text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">10</span> <p class="small">Training Programs</p></li>
+                <li class="col-md-3 bg-green text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">2230</span> <p class="small">Happy Clients</p></li>
+                <li class="col-md-3 bg-green text-white text-center py-4 align-items-center"><span class="h1 fw-bolder d-inline-block mb-2">2230</span> <p class="small">Since we started</p></li>
             </ul>
         </div>
     </section>
@@ -191,7 +193,7 @@
             <div class="col-md">
                 <div class="card card-modified border-0 rounded overflow-hidden bg-transparent">
                     <img src="img/swimming.png" class="card-img-top flex-grow-1" alt="...">
-                    <div class="card-body bg-success">
+                    <div class="card-body bg-green">
                       <h5 class="card-title">Swimming</h5>
                       <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -200,7 +202,7 @@
             <div class="col-md">
                 <div class="card card-modified border-0 rounded overflow-hidden bg-transparent">
                     <img src="/img/tredmill.png" class="card-img-top flex-grow-1" alt="...">
-                    <div class="card-body bg-success">
+                    <div class="card-body bg-green">
                       <h5 class="card-title">Tredmill</h5>
                       <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -209,7 +211,7 @@
             <div class="col-md">
                 <div class="card card-modified border-0 rounded overflow-hidden bg-transparent">
                     <img src="img/boxing.png" class="card-img-top flex-grow-1" alt="...">
-                    <div class="card-body bg-success">
+                    <div class="card-body bg-green">
                       <h5 class="card-title">Boxing</h5>
                       <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -218,7 +220,7 @@
             <div class="col-md">
                 <div class="card card-modified border-0 rounded overflow-hidden bg-transparent">
                     <img src="img/pushups.png" class="card-img-top flex-grow-1" alt="...">
-                    <div class="card-body bg-success">
+                    <div class="card-body bg-green">
                       <h5 class="card-title">Pushups</h5>
                       <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -227,7 +229,7 @@
             <div class="col-md">
                 <div class="card card-modified border-0 rounded overflow-hidden bg-transparent">
                     <img src="img/lifting.png" class="card-img-top flex-grow-1" alt="...">
-                    <div class="card-body bg-success">
+                    <div class="card-body bg-green">
                       <h5 class="card-title">Lifting</h5>
                       <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -236,7 +238,7 @@
             <div class="col-md">
                 <div class="card card-modified border-0 rounded overflow-hidden bg-transparent">
                     <img src="img/basketball.png" class="card-img-top flex-grow-1" alt="...">
-                    <div class="card-body bg-success">
+                    <div class="card-body bg-green">
                       <h5 class="card-title">Basketball</h5>
                       <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>

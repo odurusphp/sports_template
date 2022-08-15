@@ -1,10 +1,20 @@
 :root {
-    --bs-success: #0db93e;
+    --primary: #0db93e;
 }
 
-.bg-success {
-    background-color: #0db93e;
-  }
+/* Bootstrap overide */
+.btn-outline-success {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.text-success {
+    color: var(--primary) !important;
+}
 .container {
     overflow: hidden;
 }
@@ -13,6 +23,20 @@
 .bg-black {
     background-color: black;
 } 
+.bg-green {
+    background-color: var(--primary) !important;
+}
+
+/* Nav bar */
+.navbar-brand-modified {
+    max-width: 5rem;
+}
+
+@media screen and (min-width: 760px) {
+    .navbar-brand-modified {
+        max-width: 8rem;
+    }
+}
 
 /* Carousel */
 .overlay-dark {
