@@ -1,3 +1,11 @@
+:root {
+    --bs-success: #0db93e;
+}
+
+.bg-success {
+    background-color: #0db93e;
+  }
+
 /* Colors */
 .bg-black {
     background-color: black;
@@ -26,4 +34,14 @@
 .indicator--round {
     height: 15px;
     width: 15px;
+}
+
+/* Popular Exercise */
+@media screen and (min-width: 760px) {
+    .card-grid-modified {
+        height: 20rem
+    }
+    .card-modified {
+        width: 18rem;
+    }
 }
