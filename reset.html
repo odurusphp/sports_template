@@ -4,33 +4,33 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login - JMJ Sports center</title>
+        <title>Password Reset - JMJ Sports center</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
-    <div class="container-fluid p-0" style="height: 100vh;">
-        <img src="/img/victor-freitas-WvDYdXDzkhs-unsplash.jpg" class="position-absolute background-img" alt="">
+    <div class="container-fluid p-0">
+        <img src="/img/victor-freitas-WvDYdXDzkhs-unsplash.jpg" class="position-fixed background-img" alt="">
         
-        <div class="container h-100">
+        <div class="container h-100 pt-5">
             <div class="row h-100">
                 <!-- Left -->
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <form class="card px-4 py-5 w-100">
+                    <form class="card px-4 py-5 w-100" id="form">
                         <h3 class="fw-bold mb-4">Reset Password</h3>
 
                         <div class="mb-2">
-                            <label for="email" class="fw-bold">New Password</label>
-                            <input type="text" name="email" id="email" placeholder="password" class="form-control small px-3 py-1">
+                            <label for="password" class="fw-bold">New Password</label>
+                            <input type="password" name="password" id="password" placeholder="password" class="form-control small px-3 py-1" required>
                         </div>
                         <div class="mb-2">
-                            <label for="email" class="fw-bold">Confirm Password</label>
-                            <input type="text" name="email" id="email" placeholder="password" class="form-control small px-3 py-1">
+                            <label for="passwodConfirm" class="fw-bold">Confirm Password</label>
+                            <input type="password" name="passwodConfirm" id="passwodConfirm" placeholder="password" class="form-control small px-3 py-1" required>
                         </div>
 
-                        <button type="submit" class="btn btn-success">Reset</button>
+                        <button type="submit" class="btn btn-success" onclick="validate()">Reset</button>
                     </form>
                 </div>
 
@@ -45,5 +45,8 @@
             </div>
         </div>
     </div>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
