@@ -7,47 +7,8 @@
     <title>Home - JMJ Sports center</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="/css/css/normalize.css" />
-    <link rel="stylesheet" href="/css/css/styles.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <style>
-      .overlay-dark {
-        filter: brightness(30%);
-      }
-      .carousel-caption-modified {
-        z-index: 2;
-      }
-
-      .carousel-caption--bold {
-        font-weight: 900;
-        font-size: 50px;
-      }
-      .fs-small {
-        font-size: 16x;
-      }
-
-      .fs-md {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        font-size: 40px;
-      }
-
-      .small {
-        font-size: 20px;
-      }
-
-      .our_aim {
-        object-fit: contain;
-      }
-
-      .testimonial_line {
-        width: 8rem;
-        border: 1px solid #1BCE42;
-        position: absolute;
-        margin-left: 23rem;
-        margin-top: 12px;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="bg-dark">
     <!-- Navigation bar -->
@@ -157,14 +118,13 @@
       <div class="row col-xxl-6 gx-4">
         <div class="col text-white">
           <img
-            class="img-fluid w-50 our_aim d-flex justify-content-start"
-            style="max-width: 100%; height: 100%"
+            class="img-fluid our_aim_img d-flex justify-content-start"
             src="/img/welcome-about.png"
             alt="..."
           />
 
           <img
-            class="img-fluid w-25 our_aim d-flex justify-content-end position-absolute "
+            class="img-fluid our_aim_img d-flex justify-content-end position-absolute our_aim_img_overlap "
             src="/img/lady-seated.png"
             alt="..." >
           </img>
@@ -182,21 +142,18 @@
           </h3>
 
           <p class="text-white mg-3">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-            nobis eos nisi fuga, nam recusandae consequatur facilis error esse
-            placeat?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maiores voluptate magnam debitis non, delectus fugiat quod recusandae dolores illum libero labore veritatis doloremque fuga.
           </p>
 
           <p class="text-white mg-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit
-            dolor veritatis voluptate vero neque.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo ea, illo nobis quod, reprehenderit vitae in laborum dicta porro maxime veniam odio dignissimos animi!
           </p>
         </div>
       </div>
     </div>
 
     <!-- Our Aim  -->
-    <div class="container-lg col-12 my-4">
+    <div class="container-lg col-12 container_our_aim mb-4">
       <div class="row">
         <div class="col d-flex justify-content-center">
           <h3 class="text-white">OUR AIM</h3>
@@ -219,7 +176,7 @@
         accusantium. Non veritatis quia ipsum, ipsam sed accusantium doloremque!
         Accusamus, saepe?
       </p>
-      <img src="/img/fitness-table.png" class="w-100" alt="" />
+      <img src="/img/fitness-table.png" class="w-100" alt="..." />
     </div>
 
     <div class="container-lg my-5">
@@ -307,7 +264,7 @@
     <div class="row">
         <div class="col-sm-6 text-white p-3">
             <img
-                class="img-fluid our_aim"
+                class="img-fluid testimonial_img"
                 src="/img/testimonial.png"
                 alt="..."
             />
@@ -331,8 +288,10 @@
           </p>
 
           <br>
-          <span class="testimonial_line"></span> 
-          <span class="text-white mg-3 d-flex justify-content-end"><i>Paula Flin</i></span>
+          <div>
+              <span class="testimonial_line"></span>
+              <span class="text-white d-flex justify-content-end"><i>Paula Flin</i></span>
+          </div>
         </div>
     </div>
     </div>

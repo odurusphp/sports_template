@@ -1,50 +1,114 @@
 :root {
-    --bs-success: #0db93e;
+  --bs-success: #0db93e;
 }
 
 .bg-success {
-    background-color: #0db93e;
-  }
+  background-color: #0db93e;
+}
 .container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Colors */
 .bg-black {
-    background-color: black;
-} 
+  background-color: black;
+}
 
 /* Carousel */
 .overlay-dark {
-    filter: brightness(30%);
+  filter: brightness(30%);
 }
 .carousel-caption-modified {
-    z-index: 2;
+  z-index: 2;
 }
 .text-outline {
-    color: transparent;
-    font-size: 60px;
-    -webkit-text-stroke: 1px white;
-    font-weight: 900;
+  color: transparent;
+  font-size: 60px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px white;
 }
 .carousel-caption--bold {
-    font-weight: 900;
-    font-size: 50px;
+  font-weight: 900;
+  font-size: 50px;
 }
 .fs-small {
-    font-size: 13px;
+  font-size: 13px;
 }
 .indicator--round {
-    height: 15px;
-    width: 15px;
+  height: 15px;
+  width: 15px;
 }
 
 /* Popular Exercise */
 @media screen and (min-width: 760px) {
-    .card-grid-modified {
-        height: 20rem
-    }
-    .card-modified {
-        width: 18rem;
-    }
+  .card-grid-modified {
+    height: 20rem;
+  }
+  .card-modified {
+    width: 18rem;
+  }
+}
+
+/* Carousel */
+.overlay-dark {
+  filter: brightness(30%);
+}
+.carousel-caption-modified {
+  z-index: 2;
+}
+
+.carousel-caption--bold {
+  font-weight: 900;
+  font-size: 50px;
+}
+.fs-small {
+  font-size: 16x;
+}
+
+.fs-md {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.small {
+  font-size: 20px;
+}
+
+/* Our Aim */
+.our_aim_img {
+  margin-top: 0;
+  object-fit: contain;
+  width: 24rem;
+}
+
+.our_aim_img_overlap {
+  margin-top: -12rem;
+  margin-left: 10rem;
+  object-fit: contain;
+  width: 20rem;
+}
+
+.container_our_aim {
+  margin-top: 5rem;
+}
+
+/* Testimonial */
+.testimonial_line {
+  border: 1px solid #1bce42;
+  display: block;
+  margin-left: 23rem;
+  margin-top: 12px;
+  position: absolute;
+  width: 8rem;
+}
+
+.testimonial_img {
+  object-fit: contain;
+}
+
+/* Our Sevices */
+.card_img {
+  height: 19rem;
+  object-fit: cover;
 }
