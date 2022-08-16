@@ -1,5 +1,7 @@
 :root {
     --primary: #0db93e;
+    --primary-opacity: rgba(93, 196, 14, 0.5);
+    --light: #aaaaaa;
 }
 ::placeholder {
     font-size: small;
@@ -21,6 +23,11 @@
 .container {
     overflow: hidden;
 }
+
+/* Forms */
+.form-check-input {
+    border-color: var(--light);
+}
 .form-check-input:focus {
     border-color: var(--primary);
 }
@@ -28,6 +35,8 @@
     background-color: var(--primary);
     border-color: var(--primary);
 }
+
+/* Button */
 .btn-success {
     color: #fff;
     background-color: var(--primary);
@@ -37,6 +46,14 @@
     color: var(--primary);
     background: none;
     border-color: var(--primary);
+}
+
+/* Borders */
+.border-success {
+    border-color: var(--primary) !important;
+}
+.border-success-opacity {
+    border-color: var(--primary-opacity) !important;
 }
 
 /* Colors */
@@ -108,10 +125,7 @@
     }
 }
 
-.background-img-short {
-    /* The image used */
-    background-image: url("/img/booking-hero-image.png");
-  
+.background-img-short {  
     /* Full height */
     height: 100%;
   
@@ -119,6 +133,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.booking-hero-background {
+    /* The image used */
+    background-image: url("/img/booking-hero-image.png");
+}
+.checkout-hero-background {
+    /* The image used */
+    background-image: url("/img/checkout-hero-image.png");
 }
 .background-img-short-container {
     width: 100vw; 
@@ -128,5 +150,12 @@
 @media screen and (min-width: 760px) {
     .background-img-short-container {
         max-height: 40vw;
+    }
+}
+
+/* Appointment form */
+@media screen and (min-width: 760px) {
+    .appointment-form {
+        max-width: 700px;
     }
 }

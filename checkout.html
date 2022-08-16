@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Service - JMJ Sports center</title>
+    <title>Checkout - JMJ Sports center</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -46,59 +46,82 @@
     </nav>
 
     <!-- Page top -->
-    <div class="container-fluid p-0 background-img-short-container position-relative w-100 d-flex align-items-center mb-5">
-        <div class="background-img-short booking-hero-background position-absolute w-100"></div>
+    <div class="container-fluid p-0 background-img-short-container position-relative w-100 d-flex align-items-center mb-3">
+        <div class="background-img-short checkout-hero-background position-absolute w-100"></div>
         <div class="container">
             <div class="position-absolute">
-                <h1 class="text-white carousel-caption--bold fs-1">Book Service</h1>
+                <h1 class="text-white carousel-caption--bold fs-1">Shoppin Cart</h1>
                 <p class="w-50 text-white fw-light lh-sm d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo nam illum, unde vitae eaque adipisci ducimus enim neque nisi!</p>
             </div>
         </div>
     </div>
 
+    
     <!-- Appointment details -->
-    <div class="container text-white appointment-form">
-        <h2 class="text-center fw-bold">Appointment Details</h2>
+    <div class="container text-white">
+        <p class="border border-3 pe-2 border-success border-end-2 border-start-0 border-bottom-0 border-top-0 float-end fw-lighter">YOUR CHECKOUT</p>
+        
         <form class="card py-5 w-100 bg-transparent" id="form">
+            <div class="row gx-5">
 
-            <input type="text" name="fname" id="fname" placeholder="Full name" class="form-control small px-3 py-1 mb-4 bg-transparent text-white" required>
+                <!-- Left -->
+                <div class="col-md-6">
+                    <p class="fs-3 fw-bold mb-5 form-text">Billing Details</p>
+                    <input type="text" name="fname" id="fname" placeholder="Full name" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white" required>
             
-            <input type="email" name="email" id="email" placeholder="Email address" class="form-control small px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <input type="tel" name="phone" id="phone" placeholder="Phone number" class="form-control small px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <div class="d-flex mb-4">
-                <span class="me-2">Gender:</span>
-                <div class="form-check">
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">No preference</label> <br>
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">Male</label> <br>
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">Female</label> <br>
+                    <input type="email" name="email" id="email" placeholder="Email address" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white" required>
+                    
+                    <input type="tel" name="phone" id="phone" placeholder="Phone number" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white" required>
+
+                    <select class="form-select bg-transparent p text-white mb-4" aria-label="Default select example" required>
+                        <option selected disabled value="">Select Country</option>
+                        <option value="1">Ghana</option>
+                        <option value="2">South Africa</option>
+                        <option value="3">U.S.A</option>
+                    </select>
+
+                    <input type="text" name="region" id="region" placeholder="State / Region" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white" required>
+
+                    <input type="text" name="city" id="city" placeholder="Town / City" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white" required>
+
+                    <input type="text" name="street" id="street" placeholder="Street address" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white" required>
+                    
+                    <input type="text" name="apartment" id="apartment" placeholder="Apartment, Suit, etc (optional)" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white">
+                    
+                    <input type="text" name="postcode" id="postcode" placeholder="Postcode / Zip" class="form-control small px-3 py-2 mb-4 bg-transparent p text-white" required>
+                </div>
+
+                <!-- Right -->
+                <div class="col-md-6">
+                    <p class="fs-3 fw-bold mb-md-5 form-text">Additional Information</p>
+
+                    <textarea class="form-control bg-transparent text-white mb-4" placeholder="Notes" id="exampleFormControlTextarea1" rows="12"></textarea>
+
+                    <label for="coupon" class="mb-2 mt-md-5 text-secondary h4">Have A Coupon?</label>
+                    <div class="d-flex mb-4">
+                        <input type="text" class="form-control border-success text-light bg-transparent me-3" placeholder="Coupon Code" name="coupon" id="coupon">
+                        <button type="button" class="btn btn-outline-success w-100 ms-3"><span class="small">APPLY COUPON</span></button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border border-success-opacity border-start-0 border-end-0 border-bottom-1 py-3 text-light">
+                        <p class="h3 mb-4">Your package</p>
+                        <div class="mb-2 fw-lighter"><span>Adidas Boost II</span> <span class="float-end">Ghc 200.00</span></div>
+                        <div class="fw-lighter"><span>Adidas Boost IV</span> <span class="float-end">Ghc 200.00</span></div>
+                    </div>
+                    
+                    <div class="border border-success-opacity border-start-0 border-end-0 border-top-0 border-bottom-1 py-3 mb-3 text-light">
+                        <div class="text-light fw-lighter"><span>Subtotal</span> <span class="float-end">Ghc 400.00</span></div>
+                        <div><span class="text-light fs-5">Total</span> <span class="float-end">Ghc 400.00</span></div>
+                    </div>
+
+                    <p class="fw-light py-3 small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima corporis fugiat repudiandae aut harum illo</p>
+
+
+                    <button type="submit" class="btn btn-outline-success mb-4 w-100" onclick="validate()">PLACE ORDER</button>
                 </div>
             </div>
-
-            <select class="form-select bg-transparent text-white mb-4" aria-label="Default select example" required>
-                <option selected disabled value="">Select type</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-
-            <input type="date" name="date" id="date" class="form-control text-white mb-4 bg-transparent" required>
-
-            <input type="time" name="time" id="time" class="form-control text-white mb-4 bg-transparent" required>
-
-            <div class="mb-4">
-                <label for="customRange2" class="form-label">Years of experience</label><br>
-                <span class="small fw-lighter">0 years</span> <span class="small fw-lighter float-end">50 years</span>
-                <input type="range" class="form-range" min="0" max="50" id="customRange2">
-            </div>
-
-            <textarea class="form-control bg-transparent text-white mb-4" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-            <button type="submit" class="btn btn-success mb-4" onclick="validate()">BOOK NOW</button>
         </form>
     </div>
 
