@@ -1,6 +1,9 @@
 :root {
     --primary: #0db93e;
 }
+::placeholder {
+    font-size: small;
+}
 
 /* Bootstrap overide */
 .btn-outline-success {
@@ -17,6 +20,23 @@
 }
 .container {
     overflow: hidden;
+}
+.form-check-input:focus {
+    border-color: var(--primary);
+}
+.form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-success {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: none;
+}
+.btn-success:hover {
+    color: var(--primary);
+    background: none;
+    border-color: var(--primary);
 }
 
 /* Colors */
@@ -70,5 +90,21 @@
     }
     .card-modified {
         width: 18rem;
+    }
+}
+
+
+
+/* Login page */
+.background-img {
+    min-width: 100vw;
+    max-height: 100%;
+    z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+    .background-img {
+        max-width: 100vw;
+        max-height: none;
     }
 }
