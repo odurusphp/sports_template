@@ -7,6 +7,8 @@
     <title>Home - JMJ Sports center</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="/css/css/normalize.css" />
+    <link rel="stylesheet" href="/css/css/styles.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <style>
       .overlay-dark {
@@ -33,13 +35,29 @@
       .small {
         font-size: 20px;
       }
+
+      .our_aim {
+        object-fit: contain;
+      }
+
+      .testimonial_line {
+        width: 8rem;
+        border: 1px solid #1BCE42;
+        position: absolute;
+        margin-left: 23rem;
+        margin-top: 12px;
+      }
     </style>
   </head>
   <body class="bg-dark">
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4">
+    <nav
+      class="navbar navbar-expand-md navbar-dark fixed-top bg-dark bg-opacity-25"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar scroll</a>
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" style="width: 8rem" alt=""
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,20 +74,25 @@
             class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll"
             style="--bs-scroll-height: 100px"
           >
-            <li class="nav-item">
+            <li class="nav-item me-lg-4">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-lg-4">
               <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-lg-4">
               <a class="nav-link" href="#">Service</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-lg-4">
               <a class="nav-link" href="#">Shop</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-lg-4">
               <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
             </li>
           </ul>
           <i class="fa fa-search text-success"></i>
@@ -124,21 +147,28 @@
       </div>
     </div>
 
-    <div class="container-lg flex-row-reverse">
-      <div class="row col-2">
+    <div class="container-lg d-flex justify-content-end">
+      <div class="row col-1">
         <p class="text-white fs-small" styles="align-items-end;">About Us</p>
       </div>
     </div>
 
     <div class="container-lg">
-      <div class="row col-xxl-6 gx-2">
+      <div class="row col-xxl-6 gx-4">
         <div class="col text-white">
           <img
-            class="img-fluid"
+            class="img-fluid w-50 our_aim d-flex justify-content-start"
             style="max-width: 100%; height: 100%"
-            src=""
-            alt=""
+            src="/img/welcome-about.png"
+            alt="..."
           />
+
+          <img
+            class="img-fluid w-25 our_aim d-flex justify-content-end position-absolute "
+            src="/img/lady-seated.png"
+            alt="..." >
+          </img>
+
         </div>
 
         <div class="col">
@@ -150,9 +180,280 @@
             CATERING TO YOUR REQUIREMENTS,<br />
             HANDLING YOUR NEEDS WITH CARE
           </h3>
+
+          <p class="text-white mg-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+            nobis eos nisi fuga, nam recusandae consequatur facilis error esse
+            placeat?
+          </p>
+
+          <p class="text-white mg-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit
+            dolor veritatis voluptate vero neque.
+          </p>
         </div>
       </div>
     </div>
+
+    <!-- Our Aim  -->
+    <div class="container-lg col-12 my-4">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h3 class="text-white">OUR AIM</h3>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid p-0 overflow-hidden d-flex align-items-center"
+      style="height: 350px"
+    >
+      <p
+        class="text-white position-absolute"
+        style="width: 600px; margin-left: 100px"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit ut ipsam
+        minima placeat quae iste dolorum? Repellat ut dolorum ex. <br />
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+        accusantium. Non veritatis quia ipsum, ipsam sed accusantium doloremque!
+        Accusamus, saepe?
+      </p>
+      <img src="/img/fitness-table.png" class="w-100" alt="" />
+    </div>
+
+    <div class="container-lg my-5">
+      <div class="row">
+        <div class="col col-12 d-flex justify-content-center">
+          <h3 class="text-white">OUR TEAM</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col">
+          <div class="card-group d-flex">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <img
+                class="card-img-top"
+                src="/img/workout.png"
+                alt="Random Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-light">CEO</h5>
+                <h4 class="card-head">Workout</h4>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Commodi officia quas laudantium natus impedit. Id?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card-group d-flex">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <img
+                class="card-img-top"
+                src="/img/tredmill.png"
+                alt="Random Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-light">Manager</h5>
+                <h4 class="card-head">Tredmill</h4>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Commodi officia quas laudantium natus impedit. Id?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card-group d-flex">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <img
+                class="card-img-top"
+                src="/img/cycling.png"
+                alt="Random Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-light">Instructor</h5>
+                <h4 class="card-head">Cycling</h4>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Commodi officia quas laudantium natus impedit. Id?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="container-fluid">
+            <div class="col d-flex justify-content-center">
+                <h3 class="text-white">TESTIMONIAL</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-sm-6 text-white p-3">
+            <img
+                class="img-fluid our_aim"
+                src="/img/testimonial.png"
+                alt="..."
+            />
+        </div>
+
+        <div class="col-sm-6 bg-dark text-white p-3">
+            <h3 class="text-white small">
+            <p class="fs-2 fw-bolder"><i class="fas fa-quote-left"></i></p>
+            </h3>
+          <p class="text-white mg-3">
+            <i>
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate, deleniti! Magnam, doloribus cum similique consectetur
+              molestias veritatis? Vel quod quaerat adipisci eligendi dolor sint
+              nisi est quisquam sapiente quis? Voluptatum vel quod nemo magni
+              eius reiciendis ipsum asperiores laborum doloribus voluptatem
+              reprehenderit dolorem provident alias ad, minus, expedita aliquid
+              assumenda id necessitatibus! Ratione, molestias quam delectus
+              facere consectetur!"
+            </i>
+          </p>
+
+          <br>
+          <span class="testimonial_line"></span> 
+          <span class="text-white mg-3 d-flex justify-content-end"><i>Paula Flin</i></span>
+        </div>
+    </div>
+    </div>
+
+    <!-- BLOG -->
+    <div class="container-lg col-12 mt-0">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h3 class="text-white">BLOG</h3>
+        </div>
+      </div>
+    </div>
+
+   <div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-sm-6 text-white p-3">
+            
+            <div class="card bg-dark float-end me-5" style="width:500px">
+                <img class="card-img-top" src="/img/tredmill.png" alt="..." style="width:100%">
+                <div class="card-body">
+
+                <br>
+                <h4 class="card-title">What to listen to while on the treadmill</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laborum ipsa reiciendis eaque minima doloribus impedit sit saepe voluptatem possimus.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-6 text-white p-3">
+            <div class="col-sm-6 text-white">
+            <div class="card bg-dark" style="width:500px">
+                <img class="card-img-top" src="/img/cycling.png" alt="..." style="width:100%">
+                <div class="card-body">
+
+                <br>   
+                <h4 class="card-title">What to wear before cycling</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laborum ipsa reiciendis eaque minima doloribus impedit sit saepe voluptatem possimus.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+
+    </div>
+    
+    <hr class="bg-light" />
+
+    <!-- Footer -->
+    <section class="container text-secondary py-5">
+      <div class="row">
+        <div class="col-md mb-4">
+          <span class="h4 mb-md-5 d-block text-white">Links</span>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary"
+                >Social media</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary"
+                >Contact</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary"
+                >Overons</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md mb-4">
+          <span class="h4 mb-md-5 d-block text-white">Company</span>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary"
+                >Terms & condition</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary"
+                >Social media</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary">Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md mb-4">
+          <span class="h4 mb-md-5 d-block text-white">Get in touch</span>
+          <ul class="list-unstyled text-white">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary"
+                >Overons</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none link-secondary"
+                >Social media</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-md d-flex flex-column justify-content-between mb-4 order-md-first text-center text-md-start"
+        >
+          <a class="navbar-brand" href="#"
+            ><img
+              src="img/logo.png"
+              class="w-100"
+              style="max-width: 8rem"
+              alt=""
+          /></a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div>
+            <i class="fa-brands fa-facebook-f me-3 fs-3"></i>
+            <i class="fa-brands fa-twitter me-3 fs-3"></i>
+            <i class="fa-brands fa-instagram fs-3"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/bootstrap.js"></script>
   </body>
