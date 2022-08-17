@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Service - JMJ Sports center</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4 bg-dark">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-modified" href="#"><img src="img/logo.png" class="w-100" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarScroll">
+            <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: auto;">
+              <li class="nav-item me-lg-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+            <i class="fa fa-search text-success"></i>
+            <a href="signup.html" class="btn btn-outline-success border-2 ms-2 px-4 py-0 fs-6 text-nowrap"> SIGN UP </a>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Page top -->
+    <div class="container-fluid p-0 background-img-short-container position-relative w-100 d-flex align-items-center mb-5">
+        <div class="background-img-short booking-hero-background position-absolute w-100"></div>
+        <div class="container">
+            <div class="position-absolute">
+                <h1 class="text-white carousel-caption--bold fs-1">Book Service</h1>
+                <p class="w-50 text-white fw-light lh-sm d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo nam illum, unde vitae eaque adipisci ducimus enim neque nisi!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment details -->
+    <div class="container text-white appointment-form">
+        <h2 class="text-center fw-bold">Appointment Details</h2>
+        <form class="card py-5 w-100 bg-transparent" id="form">
+
+            <input type="text" name="fname" id="fname" placeholder="Full name" class="form-control small px-3 py-1 mb-4 bg-transparent text-white" required>
+            
+            <input type="email" name="email" id="email" placeholder="Email address" class="form-control small px-3 py-1 mb-4 bg-transparent text-white" required>
+            
+            <input type="tel" name="phone" id="phone" placeholder="Phone number" class="form-control small px-3 py-1 mb-4 bg-transparent text-white" required>
+            
+            <div class="d-flex mb-4">
+                <span class="me-2">Gender:</span>
+                <div class="form-check">
+                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
+                    <label for="gender">No preference</label> <br>
+                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
+                    <label for="gender">Male</label> <br>
+                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
+                    <label for="gender">Female</label> <br>
+                </div>
+            </div>
+
+            <select class="form-select bg-transparent text-white mb-4" aria-label="Default select example" required>
+                <option selected disabled value="">Select type</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <input type="date" name="date" id="date" class="form-control text-white mb-4 bg-transparent" required>
+
+            <input type="time" name="time" id="time" class="form-control text-white mb-4 bg-transparent" required>
+
+            <div class="mb-4">
+                <label for="customRange2" class="form-label">Years of experience</label><br>
+                <span class="small fw-lighter">0 years</span> <span class="small fw-lighter float-end">50 years</span>
+                <input type="range" class="form-range" min="0" max="50" id="customRange2">
+            </div>
+
+            <textarea class="form-control bg-transparent text-white mb-4" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            <button type="submit" class="btn btn-success mb-4" onclick="validate()">BOOK NOW</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <section class="container text-secondary py-5">
+        <div class="row">
+            <div class="col-md mb-4">
+                <span class="h4 mb-md-5 d-block text-white">Links</span>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Social media</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Contact</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Overons</a></li>
+                </ul>           
+            </div>
+            <div class="col-md mb-4">
+                <span class="h4 mb-md-5 d-block text-white">Company</span>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Terms & condition</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Social media</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Policy</a></li>
+                </ul>                
+            </div>
+            <div class="col-md mb-4">
+                <span class="h4 mb-md-5 d-block text-white">Get in touch</span>
+                <ul class="list-unstyled text-white">
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Overons</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Social media</a></li>
+                </ul>            
+            </div>
+            <div class="col-md d-flex flex-column justify-content-between mb-4 order-md-first text-center text-md-start">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" class="w-100" style="max-width: 8rem;" alt=""></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div><i class="fa-brands fa-facebook-f me-3 fs-3"></i> <i class="fa-brands fa-twitter me-3 fs-3"></i> <i class="fa-brands fa-instagram fs-3"></i></div>          
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
