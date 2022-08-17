@@ -21,16 +21,16 @@
                     <form class="card px-4 py-5 w-100" id="form">
                         <h3 class="fw-bold">Login</h3>
                         <div class="mb-4 d-flex justify-content-between">
-                            <span class="small form-text">Don't have an account yet?</span> <span><a href="signup.html" class="text-success">Sign up</a></span>
+                            <span class="form-text">Don't have an account yet?</span> <span><a href="signup.html" class="text-success">Sign up</a></span>
                         </div>
 
                         <label for="email" class="fw-bold">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="you@example.com" class="form-control small px-3 py-1 mb-4" required>
+                        <input type="email" name="email" id="email" placeholder="you@example.com" class="form-control text-secondary px-3 py-1 mb-4" required>
 
                         <div class="mb-4 row">
                             <label for="password" class="fw-bold col-md-6 order-md-first">Password</label> <span class="col-md-6 d-md-flex order-last order-md-first justify-content-md-end text-end"><a href="forgot.html" class="text-success">Forgot password?</a></span>
                             <div class="w-100">
-                                <input type="password" name="password" id="password" placeholder="Enter 6 characters or more" class="form-control small px-3 py-1 col w-100" required>
+                                <input type="password" name="password" id="password" placeholder="Enter 6 characters or more" class="form-control text-secondary px-3 py-1 col w-100" required>
                             </div>
                         </div>
 
@@ -41,11 +41,11 @@
 
                         <button type="submit" class="btn btn-success mb-3" onclick="validate()">Login</button>
 
-                        <div class="d-flex mb-3"><hr class="bg-success w-100"> <span class="text-secondary small w-100 text-center">or login with</span> <hr class="bg-success w-100"></div>
+                        <div class="d-flex mb-3"><hr class="bg-success w-100"> <span class="text-secondary w-100 text-center">or login with</span> <hr class="bg-success w-100"></div>
 
-                        <div class="d-flex">
-                            <a href="http://" class="btn btn-outline-danger w-100 ms-3 shadow d-flex align-items-center justify-content-center fw-bold"><i class="fa-brands fa-google me-3 fs-3"></i>Google</a>
-                            <a href="http://" class="btn btn-outline-primary w-100 ms-3 shadow d-flex align-items-center justify-content-center fw-bold"><i class="fa-brands fa-facebook-f me-3 fs-3"></i>Facebook</a>
+                        <div class="row">
+                            <div class="col-md-6 mb-3"><a href="http://" class="col-md-6 btn btn-outline-primary w-100 ms-md-3 shadow d-flex align-items-center justify-content-center fw-bold"><i class="fa-brands fa-facebook-f me-3 fs-3"></i>Facebook</a></div>
+                            <div class="col-md-6"><a href="http://" class="col-md-6 btn btn-outline-danger w-100 me-md-3 shadow d-flex align-items-center justify-content-center fw-bold"><i class="fa-brands fa-google me-3 fs-3"></i>Google</a></div>
                         </div>
                          
                     </form>
