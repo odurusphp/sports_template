@@ -102,34 +102,6 @@
   width: 15px;
 }
 
-.fs-md {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-}
-
-.small {
-  font-size: 20px;
-}
-
-/* Our Aim */
-.our_aim_img {
-  margin-top: 0;
-  object-fit: contain;
-  width: 24rem;
-}
-
-.our_aim_img_overlap {
-  margin-top: -12rem;
-  margin-left: 10rem;
-  object-fit: contain;
-  width: 20rem;
-}
-
-.container_our_aim {
-  margin-top: 5rem;
-}
-
 /* Testimonial */
 .testimonial_line {
   border: 1px solid #1bce42;
@@ -145,10 +117,6 @@
 }
 
 /* Our Sevices */
-.card_img {
-  height: 19rem;
-  object-fit: cover;
-}
 
 .product_img {
   border-radius: 5px;
@@ -180,6 +148,7 @@
   }
 }
 
+/* Hero block design */
 .background-img-short {
   /* Full height */
   height: 100%;
@@ -215,16 +184,7 @@
   }
 }
 
-/* Our Shop / Price Range Slider */
-/* Import Google Font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
+/* Filter slider */
 ::selection {
   color: #fff;
   background: #25ba4f;
