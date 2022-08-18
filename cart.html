@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Service - JMJ Sports center</title>
+    <title>Cart - JMJ Sports center</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse text-center" id="navbarScroll">
             <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: auto;">
               <li class="nav-item me-lg-4">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item  me-lg-4">
                 <a class="nav-link" href="about.html">About</a>
@@ -36,7 +36,7 @@
                 <a class="nav-link" href="contact-us.html">Contact</a>
               </li>
               <li class="nav-item  me-lg-4">
-                <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link active" aria-current="page" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
               </li>
             </ul>
             <i class="fa fa-search text-success"></i>
@@ -46,61 +46,82 @@
     </nav>
 
     <!-- Page top -->
-    <div class="container-fluid p-0 background-img-short-container position-relative w-100 d-flex align-items-center mb-5">
-        <div class="background-img-short booking-hero-background position-absolute w-100"></div>
+    <div class="container-fluid p-0 background-img-short-container position-relative w-100 d-flex align-items-center mb-3">
+        <div class="background-img-short checkout-hero-background position-absolute w-100"></div>
         <div class="container">
             <div class="position-absolute">
-                <h1 class="text-white carousel-caption--bold fs-1">Book Service</h1>
+                <h1 class="text-white carousel-caption--bold fs-1">Shopping Cart</h1>
                 <p class="w-50 text-white fw-light lh-sm d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo nam illum, unde vitae eaque adipisci ducimus enim neque nisi!</p>
             </div>
         </div>
     </div>
 
-    <!-- Appointment details -->
-    <div class="container text-white appointment-form">
-        <h2 class="text-center fw-bold">Appointment Details</h2>
-        <form class="card py-5 w-100 bg-transparent" id="form">
+    <div class="container mb-5">
+        <p class="border border-3 pe-2 mb-3 text-light border-success border-end-2 border-start-0 border-bottom-0 border-top-0 float-end fw-lighter">YOUR SHOPPING CART</p>
 
-            <input type="text" name="fname" id="fname" placeholder="Full name" class="form-control px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <input type="email" name="email" id="email" placeholder="Email address" class="form-control px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <input type="tel" name="phone" id="phone" placeholder="Phone number" class="form-control px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <div class="d-flex mb-4">
-                <span class="me-2">Gender:</span>
-                <div class="form-check">
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">No preference</label> <br>
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">Male</label> <br>
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">Female</label> <br>
+        <form action="">
+            <div class="w-100" style="overflow-x: scroll;">
+                <table class="table table-borderless overflow-scroll text-light" style="max-width: 100vw; overflow: scroll;">
+                    <thead class="border border-success-opacity border-end-0 border-start-0 border-top-0">
+                      <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody class="fw-lighter">
+                      <tr class="border border-success-opacity border-end-0 border-start-0 border-top-0">
+                        <td class="py-5"><img src="img/shoe.png" style="width: 80px; height: 100px" alt=""></td>
+                        <td class="align-middle text-nowrap">Adidas Boost II</td>
+                        <td class="align-middle text-nowrap">Ghc 100.00</td>
+                        <td class="align-middle text-nowrap"><input type="number" class="form-control bg-light rounded-0 py-1 pe-0 text-center fs-small" style="width: 60px;" name="quantity" id="quantity"></td>
+                        <td class="align-middle text-nowrap">Ghc 200.00</td>
+                        <td class="align-middle text-center"><span role="button">&times;</span></td>
+                      </tr>
+                      <tr class="border border-success-opacity border-end-0 border-start-0 border-top-0">
+                        <td class="py-5"><img src="img/shoe.png" style="width: 80px; height: 100px" alt=""></td>
+                        <td class="align-middle">Adidas Boost II</td>
+                        <td class="align-middle">Ghc 100.00</td>
+                        <td class="align-middle"><input type="number" class="form-control bg-light rounded-0 py-1 pe-0 text-center fs-small" style="width: 60px;" name="quantity" id="quantity"></td>
+                        <td class="align-middle">Ghc 200.00</td>
+                        <td class="align-middle text-center"><span role="button">&times;</span></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row mb-5 mt-5">
+                <div class="d-flex mb-4 col-md-6">
+                    <input type="text" class="form-control border-success text-light bg-transparent me-3" placeholder="Coupon Code" name="coupon" id="coupon">
+                    <button type="button" class="btn btn-outline-success w-100 ms-3 text-light"><span>APPLY COUPON</span></button>
+                </div>
+    
+                <div class="col-md-6">
+                    <button class="btn btn-outline-success w-md-50 mb-4 text-light float-md-end">UPDATE CART</button>
                 </div>
             </div>
 
-            <select class="form-select bg-transparent text-white mb-4" aria-label="Default select example" required>
-                <option selected disabled value="">Select type</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
+            <div class="col-md-6">
+                <div class="border-success-opacity border-start-0 border-end-0 border-bottom-1 py-3 text-light">
+                    <p class="h4 mb-4">CART TOTALS</p>
+                    <div class="mb-2 fw-lighter"><span>Subtotal</span> <span class="float-end">Ghc 200.00</span></div>
+                    <div class="fw-lighter"><span>Tax</span> <span class="float-end">Ghc 200.00</span></div>
+                </div>
+                
+                <div class="border border-success-opacity border-start-0 border-end-0 border-top-1 border-bottom-0 py-3 mb-3 text-light">
+                    <div><span class="text-light fs-5">Total</span> <span class="float-end">Ghc 400.00</span></div>
+                </div>
 
-            <input type="date" name="date" id="date" class="form-control text-white mb-4 bg-transparent" required>
-
-            <input type="time" name="time" id="time" class="form-control text-white mb-4 bg-transparent" required>
-
-            <div class="mb-4">
-                <label for="customRange2" class="form-label">Years of experience</label><br>
-                <span class="fw-lighter">0 years</span> <span class="fw-lighter float-end">50 years</span>
-                <input type="range" class="form-range" min="0" max="50" id="customRange2">
+                <button type="submit" class="btn btn-outline-success mb-1 w-100" onclick="validate()">CHECKOUT</button>
             </div>
 
-            <textarea class="form-control bg-transparent text-white mb-4" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-            <button type="submit" class="btn btn-success mb-4" onclick="validate()">BOOK NOW</button>
+            <a href="our-shop.html" class="text-white">continue shopping</a>
         </form>
     </div>
+
 
     <hr class="bg-light">
 

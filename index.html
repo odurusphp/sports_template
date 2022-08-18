@@ -12,31 +12,31 @@
 </head>
 <body class="bg-black">
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4 bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-2" id="navbar">
         <div class="container">
             <a class="navbar-brand navbar-brand-modified" href="#"><img src="img/logo.png" class="w-100" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="makeDark()">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarScroll">
             <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: auto;">
               <li class="nav-item me-lg-4">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item  me-lg-4">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item  me-lg-4">
-                <a class="nav-link" href="#">Service</a>
+                <a class="nav-link" href="our-services.html">Service</a>
               </li>
               <li class="nav-item  me-lg-4">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="our-shop.html">Shop</a>
               </li>
               <li class="nav-item  me-lg-4">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact-us.html">Contact</a>
               </li>
               <li class="nav-item  me-lg-4">
-                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
               </li>
             </ul>
             <i class="fa fa-search text-success"></i>
@@ -108,9 +108,9 @@
     <section class="container text-white mt-5">
         <article class="row mb-5 gx-5">
             <div class="col-md-6">
-                <p>WHO ARE WE</p>
-                <p class="fs-2 fw-bolder lh-sm">GIVE A SHAPE OF YOUR BODY</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis at ipsum, repellendus officiis quaerat consequuntur quia magni veritatis? Aliquid?</p>
+                <p class="mb-1 fw-light fs-small">WHO ARE WE</p>
+                <p class="fs-2 fw-bolder lh-sm mb-1">GIVE A SHAPE OF YOUR BODY</p>
+                <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis at ipsum, repellendus officiis quaerat consequuntur quia magni veritatis? Aliquid?</p>
                 
                 <!-- Media -->
                 <div class="d-flex align-items-center">
@@ -121,7 +121,7 @@
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <header class="fs-6 fw-bolder">GROWTH</header>
-                        <p>This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                        <p class="fw-light">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
                     </div>
                 </div>
                 
@@ -134,7 +134,7 @@
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <header class="fs-6 fw-bolder">GROWTH</header>
-                        <p>This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                        <p class="fw-light">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
                     </div>
                 </div>
 
@@ -146,7 +146,7 @@
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <header class="fs-6 fw-bolder">GROWTH</header>
-                        <p>This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                        <p class="fw-light">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
                     </div>
                 </div>
             </div>
@@ -162,10 +162,10 @@
         <article class="row mb-5 gx-5">
             <!-- right -->
             <div class="col-md-6 order-md-2">
-                <p class="mb-1 fw-light">WHY CHOOSE US</p>
+                <p class="mb-1 fw-light fs-small">WHY CHOOSE US</p>
                 <p class="mb-1 fw-bold">WE ALWAYS PROVIDE</p>
                 <p class="fs-2 fw-bolder lh-sm m-0">BEST SPORTS CENTERS FOR OVER 20 YEARS</p>
-                <p class="lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, totam laborum, dolorum eum possimus consequuntur modi enim perspiciatis doloremque voluptatum soluta est corporis excepturi vel incidunt quisquam nobis minima nam. Atque blanditiis, maiores molestias facilis animi dignissimos libero modi ad, est iure ex omnis ut? Molestiae quam nemo pariatur vel.</p>
+                <p class="lh-sm fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, totam laborum, dolorum eum possimus consequuntur modi enim perspiciatis doloremque voluptatum soluta est corporis excepturi vel incidunt quisquam nobis minima nam. Atque blanditiis, maiores molestias facilis animi dignissimos libero modi ad, est iure ex omnis ut? Molestiae quam nemo pariatur vel.</p>
             </div>
 
             <!-- left -->
@@ -250,7 +250,7 @@
     <hr class="bg-light">
 
     <!-- Footer -->
-    <section class="container text-secondary py-5">
+    <section class="container text-secondary py-4">
         <div class="row">
             <div class="col-md mb-4">
                 <span class="h4 mb-md-5 d-block text-white">Links</span>
@@ -284,5 +284,6 @@
     </section>
 
     <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
