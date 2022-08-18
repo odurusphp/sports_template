@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - JMJ Sports center</title>
+    <title>Shop - JMJ Sports center</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
@@ -12,58 +12,37 @@
   </head>
   <body class="bg-black">
     <!-- Navigation bar -->
-    <nav
-      class="navbar navbar-expand-md navbar-dark fixed-top bg-black bg-opacity-25"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="img/logo.png" style="width: 8rem" alt="..."
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarScroll">
-          <ul
-            class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px"
-          >
-            <li class="nav-item me-lg-4">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item me-lg-4">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item me-lg-4">
-              <a class="nav-link" href="our-services.html">Service</a>
-            </li>
-            <li class="nav-item me-lg-4">
-              <a class="nav-link" href="our-shop.html">Shop</a>
-            </li>
-            <li class="nav-item me-lg-4">
-              <a class="nav-link" href="contact-us.html">Contact</a>
-            </li>
-            <li class="nav-item me-lg-4">
-              <a class="nav-link" href="cart.html"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
-            </li>
-          </ul>
-          <i class="fa fa-search text-success"></i>
-          <button
-            class="btn btn-outline-success border-2 ms-2 px-4 py-0 fs-6 text-nowrap"
-          >
-            SIGN UP
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-2" id="navbar">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-modified" href="#"><img src="img/logo.png" class="w-100" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="makeDark()">
+            <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse text-center" id="navbarScroll">
+            <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: auto;">
+              <li class="nav-item me-lg-4">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="our-services.html">Service</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link active" aria-current="page" href="our-shop.html">Shop</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="contact-us.html">Contact</a>
+              </li>
+              <li class="nav-item  me-lg-4">
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+            <i class="fa fa-search text-success"></i>
+            <a href="signup.html" class="btn btn-outline-success border-2 ms-2 px-4 py-0 fs-6 text-nowrap"> SIGN UP </a>
+          </div>
         </div>
-      </div>
     </nav>
 
     <!-- Hero block -->
@@ -413,8 +392,11 @@
         </div> 
     </div>
 
+    <hr class="bg-light">
+
+
     <!-- Footer -->
-    <section class="container text-secondary py-5">
+    <section class="container text-secondary py-4">
       <div class="row">
         <div class="col-md mb-4">
           <span class="h4 mb-md-5 d-block text-white">Links</span>
