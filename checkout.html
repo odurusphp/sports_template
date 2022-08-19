@@ -93,7 +93,23 @@
 
                 <!-- Right -->
                 <div class="col-md-6">
-                    <p class="fs-3 fw-bold mb-md-5 form-text">Additional Information</p>
+                    <p class="fs-3 fw-bold mb-md-5 form-text">Payment Details</p>
+
+                    <input type="text" name="name" id="name" placeholder="Cardholder name" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
+            
+                    <input type="email" name="cardNumber" id="cardNumber" placeholder="Card number" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
+                    
+                    <div class="d-flex flex-column flex-sm-row">
+                        <input type="text" name="expDate" id="expDate" placeholder="Exp date" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>  
+                        <input type="text" name="cvv" id="cvv" placeholder="CVV" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                        <label for="remember" class="form-check-label text-secondary">Save card details for future bookings</label>
+                    </div>
+
+                    <p class="fs-3 fw-bold mb-md-3 mt-md-5 form-text">Additional Information</p>
 
                     <textarea class="form-control bg-transparent text-white mb-4" placeholder="Notes" id="exampleFormControlTextarea1" rows="12"></textarea>
 
