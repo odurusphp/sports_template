@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - JMJ Sports center</title>
+    <title>Payment - JMJ Sports center</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -36,7 +36,7 @@
                 <a class="nav-link" href="contact-us.html">Contact</a>
               </li>
               <li class="nav-item  me-lg-4">
-                <a class="nav-link active" aria-current="page" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
               </li>
             </ul>
             <i class="fa fa-search text-success"></i>
@@ -50,14 +50,12 @@
         <div class="background-img-short checkout-hero-background position-absolute w-100"></div>
         <div class="container">
             <div class="position-absolute">
-                <h1 class="text-white carousel-caption--bold fs-1">Shopping Cart</h1>
+                <h1 class="text-white carousel-caption--bold fs-1">Payment Option</h1>
                 <p class="w-50 text-white fw-light lh-sm d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo nam illum, unde vitae eaque adipisci ducimus enim neque nisi!</p>
             </div>
         </div>
     </div>
-
     
-    <!-- Appointment details -->
     <div class="container text-white">
         <p class="border border-3 pe-2 border-success border-end-2 border-start-0 border-bottom-0 border-top-0 float-end fw-lighter">YOUR CHECKOUT</p>
         
@@ -65,36 +63,8 @@
             <div class="row gx-5">
 
                 <!-- Left -->
+                <p class="fs-3 fw-bold mb-5">VISA / MASTER CARD</p>
                 <div class="col-md-6">
-                    <p class="fs-3 fw-bold mb-5 form-text">Billing Details</p>
-                    <input type="text" name="fname" id="fname" placeholder="Full name" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
-            
-                    <input type="email" name="email" id="email" placeholder="Email address" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
-                    
-                    <input type="tel" name="phone" id="phone" placeholder="Phone number" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
-
-                    <select class="form-select bg-transparent p text-white mb-4" aria-label="Default select example" required>
-                        <option selected disabled value="">Select Country</option>
-                        <option value="1">Ghana</option>
-                        <option value="2">South Africa</option>
-                        <option value="3">U.S.A</option>
-                    </select>
-
-                    <input type="text" name="region" id="region" placeholder="State / Region" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
-
-                    <input type="text" name="city" id="city" placeholder="Town / City" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
-
-                    <input type="text" name="street" id="street" placeholder="Street address" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
-                    
-                    <input type="text" name="apartment" id="apartment" placeholder="Apartment, Suit, etc (optional)" class="form-control px-3 py-2 mb-4 bg-transparent p text-white">
-                    
-                    <input type="text" name="postcode" id="postcode" placeholder="Postcode / Zip" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
-                </div>
-
-                <!-- Right -->
-                <div class="col-md-6">
-                    <p class="fs-3 fw-bold mb-md-5 form-text">Payment Details</p>
-
                     <input type="text" name="name" id="name" placeholder="Cardholder name" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
             
                     <input type="email" name="cardNumber" id="cardNumber" placeholder="Card number" class="form-control px-3 py-2 mb-4 bg-transparent p text-white" required>
@@ -108,34 +78,24 @@
                         <input type="checkbox" name="remember" id="remember" class="form-check-input">
                         <label for="remember" class="form-check-label text-secondary">Save card details for future bookings</label>
                     </div>
-
-                    <p class="fs-3 fw-bold mb-md-3 mt-md-5 form-text">Additional Information</p>
-
-                    <textarea class="form-control bg-transparent text-white mb-4" placeholder="Notes" id="exampleFormControlTextarea1" rows="12"></textarea>
-
-                    <label for="coupon" class="mb-2 mt-md-5 text-secondary h4">Have A Coupon?</label>
-                    <div class="d-flex mb-4">
-                        <input type="text" class="form-control border-success text-light bg-transparent me-3" placeholder="Coupon Code" name="coupon" id="coupon">
-                        <button type="button" class="btn btn-outline-success w-100 ms-3"><span>APPLY COUPON</span></button>
-                    </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="border border-success-opacity border-start-0 border-end-0 border-bottom-1 py-3 text-light">
-                        <p class="h3 mb-4">Your package</p>
-                        <div class="mb-2 fw-lighter"><span>Adidas Boost II</span> <span class="float-end">Ghc 200.00</span></div>
-                        <div class="fw-lighter"><span>Adidas Boost IV</span> <span class="float-end">Ghc 200.00</span></div>
+                <!-- Right -->
+                <div class="col-md-6 ps-md-5">
+                    <div class="border-success-opacity pt-0 border-start-0 border-end-0 border-bottom-1 py-3 text-light">
+                        <div class="mb-2 fw-lighter"><span>Subtotal</span> <span class="float-end">Ghc 200.00</span></div>
+                        <div class="fw-lighter mb-2"><span>Duration</span> <span class="float-end">3 hrs</span></div>
+                        <div class="fw-lighter"><span>Tax</span> <span class="float-end">Ghc 150.00</span></div>
                     </div>
                     
-                    <div class="border border-success-opacity border-start-0 border-end-0 border-top-0 border-bottom-1 py-3 mb-3 text-light">
-                        <div class="text-light fw-lighter"><span>Subtotal</span> <span class="float-end">Ghc 400.00</span></div>
-                        <div><span class="text-light fs-5">Total</span> <span class="float-end">Ghc 400.00</span></div>
+                    <div class="border border-success-opacity border-start-0 border-end-0 border-top-1 border-bottom-0 py-3 mb-3 text-light">
+                        <div><span class="text-light fs-5">Total</span> <span class="float-end">Ghc 450.00</span></div>
                     </div>
 
-                    <p class="fw-light py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima corporis fugiat repudiandae aut harum illo</p>
-
-
-                    <button type="submit" class="btn btn-outline-success mb-4 w-100" onclick="validate()">PLACE ORDER</button>
+                    <div class="d-flex flex-column flex-sm-row mt-5">
+                        <button class="btn btn-outline-success w-100 mb-4 mb-sm-0">CANCEL</button>
+                        <button class="btn btn-outline-success w-100">PAY NOW</button>
+                    </div>
                 </div>
             </div>
         </form>
