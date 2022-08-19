@@ -56,50 +56,136 @@
         </div>
     </div>
 
-    <!-- Appointment details -->
-    <div class="container text-white appointment-form">
-        <h2 class="text-center fw-bold">Appointment Details</h2>
-        <form class="card py-5 w-100 bg-transparent" id="form">
-
-            <input type="text" name="fname" id="fname" placeholder="Full name" class="form-control px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <input type="email" name="email" id="email" placeholder="Email address" class="form-control px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <input type="tel" name="phone" id="phone" placeholder="Phone number" class="form-control px-3 py-1 mb-4 bg-transparent text-white" required>
-            
-            <div class="d-flex mb-4">
-                <span class="me-2">Gender:</span>
-                <div class="form-check">
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">No preference</label> <br>
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">Male</label> <br>
-                    <input type="radio" name="gender" id="gender" class="form-check-input bg-transparent" required>
-                    <label for="gender">Female</label> <br>
+    <div class="container">
+        <div class="row text-light">
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-modified border-0 rounded overflow-hidden bg-transparent">
+                    <img src="img/basketball.png" class="card-img-top flex-grow-1" alt="...">
+                    <div class="card-body p-0">
+                      <h5 class="card-title fw-bold m-0 mt-4">GYM</h5>
+                      <div>
+                        <span><i class="fa fa-star text-warning"></i></span>
+                        <span><i class="fa fa-star text-warning"></i></span>
+                        <span><i class="fa fa-star text-warning"></i></span>
+                        <span><i class="fa fa-star text-warning"></i></span>
+                        <span><i class="fa fa-star-half-alt text-warning"></i></span>
+                      </div>
+                      <p class="card-text fw-lighter">Ghc 100 /hr</p>
+                    </div>
                 </div>
             </div>
-
-            <select class="form-select bg-transparent text-white mb-4" aria-label="Default select example" required>
-                <option selected disabled value="">Select type</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-
-            <input type="date" name="date" id="date" class="form-control text-white mb-4 bg-transparent" required>
-
-            <input type="time" name="time" id="time" class="form-control text-white mb-4 bg-transparent" required>
-
-            <div class="mb-4">
-                <label for="customRange2" class="form-label">Years of experience</label><br>
-                <span class="fw-lighter">0 years</span> <span class="fw-lighter float-end">50 years</span>
-                <input type="range" class="form-range" min="0" max="50" id="customRange2">
+            <div class="col-md-6 col-lg-4">
+                <p class="text-center fw-bold h4">AVALIABILITY</p>
+                <p class="m-0 fs-small">SELECT DATE</p>
+                <div class="d-flex">
+                    <select class="form-select bg-transparent p text-white mb-4 py-0" aria-label="Default select example" required>
+                        <option selected disabled value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">Fabruary</option>
+                        <option value="3">March/option>
+                    </select>
+                    <select class="form-select bg-transparent p text-white mb-4 py-0" aria-label="Default select example" required>
+                        <option selected disabled value="">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <select class="form-select bg-transparent p text-white mb-4 py-0" aria-label="Default select example" required>
+                        <option selected disabled value="">Year</option>
+                        <option value="1">2020</option>
+                        <option value="2">2021</option>
+                        <option value="3">2022</option>
+                    </select>
+                </div>
+                <table class="table table-borderless w-100 text-light mb-5">
+                    <thead>
+                        <tr>
+                            <th class="px-0"></th>
+                            <th class="text-center">TIME</th>
+                            <th class="text-end px-0">AVALIABILITY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-secondary">
+                            <td class="px-0"><input type="checkbox" disabled name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">7:00 am - 8:00 am</td>
+                            <td class="text-end">RESERVED</td>
+                        </tr>
+                        <tr>
+                            <td class="px-0"><input type="checkbox" name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">8:00 am - 9:00 am</td>
+                            <td class="text-end">AVAILABLE</td>
+                        </tr>
+                        <tr>
+                            <td class="px-0"><input type="checkbox" name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">10:00 am - 11:00 am</td>
+                            <td class="text-end">AVAILABLE</td>
+                        </tr>
+                        <tr class="text-secondary">
+                            <td class="px-0"><input type="checkbox" disabled name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">12:00 am - 1:00 am</td>
+                            <td class="text-end">RESERVED</td>
+                        </tr>
+                        <tr class="text-secondary">
+                            <td class="px-0"><input type="checkbox" disabled name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">1:00 am - 2:00 am</td>
+                            <td class="text-end">RESERVED</td>
+                        </tr>
+                        <tr class="text-secondary">
+                            <td class="px-0"><input type="checkbox" disabled name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">2:00 am - 3:00 am</td>
+                            <td class="text-end">RESERVED</td>
+                        </tr>
+                        <tr>
+                            <td class="px-0"><input type="checkbox" name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">3:00 am - 4:00 am</td>
+                            <td class="text-end">AVAILABLE</td>
+                        </tr>
+                        <tr>
+                            <td class="px-0"><input type="checkbox" name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">4:00 am - 5:00 am</td>
+                            <td class="text-end">AVAILABLE</td>
+                        </tr>
+                        <tr class="text-secondary">
+                            <td class="px-0"><input type="checkbox" disabled name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">5:00 am - 6:00 am</td>
+                            <td class="text-end">RESERVED</td>
+                        </tr>
+                        <tr class="text-secondary">
+                            <td class="px-0"><input type="checkbox" disabled name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">6:00 am - 7:00 am</td>
+                            <td class="text-end">RESERVED</td>
+                        </tr>
+                        <tr>
+                            <td class="px-0"><input type="checkbox" name="remember" id="remember" class="form-check-input float-start"></td>
+                            <td class="text-center">7:00 am - 8:00 am</td>
+                            <td class="text-end">AVAILABLE</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <div class="col-lg-4 ps-lg-5">
+                <div class="border-success-opacity pt-0 border-start-0 border-end-0 border-bottom-1 py-3 text-light">
+                    <p class="h4 mb-4 fw-bold">CHECKOUT</p>
+                    <div class="mb-2 fw-lighter"><span>Subtotal</span> <span class="float-end">Ghc 200.00</span></div>
+                    <div class="fw-lighter mb-2"><span>Duration</span> <span class="float-end">3 hrs</span></div>
+                    <div class="fw-lighter"><span>Tax</span> <span class="float-end">Ghc 150.00</span></div>
+                </div>
+                
+                <div class="border border-success-opacity border-start-0 border-end-0 border-top-1 border-bottom-0 py-3 mb-3 text-light">
+                    <div><span class="text-light fs-5">Total</span> <span class="float-end">Ghc 450.00</span></div>
+                </div>
 
-            <textarea class="form-control bg-transparent text-white mb-4" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <select class="form-select bg-transparent fs-small p text-white mb-4" aria-label="Default select example" required>
+                    <option selected disabled value="">CHOOSE PAYMENT METHOD</option>
+                    <option value="1">MoMo</option>
+                    <option value="2">VISA</option>
+                    <option value="3">MASTER</option>
+                </select>
 
-            <button type="submit" class="btn btn-success mb-4" onclick="validate()">BOOK NOW</button>
-        </form>
+                <button type="submit" class="btn btn-outline-success mb-1 w-100" onclick="validate()">PROCEED TO PAYMENT</button>
+            </div>
+        </div>
     </div>
 
     <hr class="bg-light">
