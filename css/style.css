@@ -158,22 +158,30 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.booking-hero-background {
-  /* The image used */
+.no-webp .booking-hero-background {
+  /* The image used for no webp*/
   background-image: url("/img/booking-hero-image.png");
+}
+.webp .booking-hero-background {
+  /* The image used for webp*/
+  background-image: url("/img/webp/booking-hero-image.webp");
 }
 .checkout-hero-background {
   /* The image used */
   background-image: url("/img/checkout-hero-image.png");
 }
+.basketball-hero-background {
+  /* The image used */
+  background-image: url("/img/basketball-large.png");
+}
 .background-img-short-container {
   width: 100vw;
-  height: 50vw;
-  max-height: 50vw;
+  height: 40vw;
+  max-height: 40vw;
 }
 @media screen and (min-width: 760px) {
   .background-img-short-container {
-    max-height: 40vw;
+    max-height: 30vw;
   }
 }
 
