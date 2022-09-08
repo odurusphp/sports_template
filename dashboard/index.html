@@ -30,7 +30,7 @@
 
 
             <!-- Main page -->
-            <div class="vh-100 bg-light p-0" style="width: 100%;">
+            <div class="w-100 bg-light p-0" style="overflow: hidden;">
                 <div class="w-100 bg-white d-flex p-2">
                     <!-- Toggler -->
                     <div class="navbar-light me-3 d-md-none">
@@ -41,7 +41,7 @@
 
                     <!-- Search bar -->
                     <div class="input-group border" style="border-radius: 40px;">
-                        <input type="text" style="border-radius: inherit;" class="form-control border-0" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <span class="input-group-text" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-success"></i></span>
                     </div>
 
@@ -64,12 +64,43 @@
                     <p class="h3 m-0">Welcome Emmanuel</p>
                     <p>19 Auguest, Friday</p>
 
-                    <div class="d-flex flex-row bd-highlight mb-3 overflow-auto pb-5">
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-flex flex-row align-items-center px-4 py-2" style="border-radius: 15px; min-width: 170px;"><p class="m-0 me-2"><span class="h5 fw-bold">280</span> <br> Members</p> <i class="fa-solid fa-user-group text-warning fs-1"></i> </div>
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-flex flex-row align-items-center px-4 py-2" style="border-radius: 15px; min-width: 170px;"><p class="m-0 me-2"><span class="h5 fw-bold">10</span> <br> Facilities</p> <i class="fa-solid fa-landmark text-primary fs-1"></i> </div>
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-flex flex-row align-items-center px-4 py-2" style="border-radius: 15px; min-width: 170px;"><p class="m-0 me-2"><span class="h5 fw-bold">4</span> <br> Bookings</p> <i class="fa-solid fa-receipt text-danger fs-1"></i> </div>
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-flex flex-row align-items-center px-4 py-2" style="border-radius: 15px; min-width: 170px;"><p class="m-0 me-2"><span class="h5 fw-bold">31,462</span> <br> <span class="text-nowrap">Total Earnings</span></p> <i class="fa-solid fa-circle-dollar-to-slot text-success fs-1"></i> </div>
+                    <!-- Features -->
+                    <div class="mb-3 pb-1 features text-nowrap">
+                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">280</span> <br> Members</p> <i class="fa-solid fa-user-group text-warning fs-1"></i> </div>
+                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">10</span> <br> Facilities</p> <i class="fa-solid fa-landmark text-primary fs-1"></i> </div>
+                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">4</span> <br> Bookings</p> <i class="fa-solid fa-receipt text-danger fs-1"></i> </div>
+                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">31,462</span> <br> <span class="text-nowrap">Total Earnings</span></p> <i class="fa-solid fa-circle-dollar-to-slot text-success fs-1"></i> </div>
                       </div>
+
+                    <div class="row m-0">
+                        <!-- Chart -->
+                        <div class="card shadow-sm border-0 col-md-7 rounded-custom overflow-hidden">
+                            <img src="../img/chart.png" alt="Booking chart" class="w-100">
+                        </div>
+                        <!-- Staff -->
+                        <div class="col-md-5 pe-0">
+                            <div class="card shadow-sm border-0 rounded-custom">
+                                <p class="px-2 mt-2 m-0">Staff</p>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="../img/ama_doe.png" alt="" style="height: 50px; width: 50px;">
+                                            </td>
+                                            <td class="align-middle">Admin</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -82,5 +82,6 @@ function showSidebar() {
 function hideSidebar() {
   document.getElementById('sidebar').style.opacity = '0';
   document.getElementById('sidebar').style.width = '0';
+  document.getElementById('sidebar').style.position = 'relative';
   document.getElementById('sidebar').style.visibility = 'hidden';
 }
