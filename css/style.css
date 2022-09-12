@@ -287,9 +287,9 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* Lists */
-  /* Tick */
+/* Tick */
 .tick li:before {
-  content: '✓';
+  content: "✓";
   font-weight: 600;
   padding-right: 5px;
 }
