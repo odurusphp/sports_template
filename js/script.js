@@ -73,7 +73,7 @@ rangeInput.forEach((input) => {
 // Dashboard
 function showSidebar() {  
   document.getElementById('sidebar').style.visibility = 'visible';
-  document.getElementById('sidebar').style.width = '50%';
+  document.getElementById('sidebar').style.width = '100%';
   document.getElementById('sidebar').style.opacity = '1';
   document.getElementById('sidebar').style.position = 'absolute';
 }

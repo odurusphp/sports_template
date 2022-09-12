@@ -10,27 +10,27 @@
     <link rel="stylesheet" href="../css/fontawesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="bg-light">
+<body class="bg-light overflow-hidden">
     <div class="container-fluid p-0" style="height: 100vh;">
         <div class="d-flex">
             <!-- Sidebar -->
-            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar" style="max-width: 350px;">
+            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
                 <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
                 <a class="navbar-brand navbar-brand-modified" href="#"><img src="../img/logo.png" class="w-50 mt-3" alt=""></a>
                 <ul class="list-unstyled mt-5 p-3">
-                    <a href="#" class="ps-5 fw-bold py-2 my-1 text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-layer-group text-white me-2"></i> Dashboard</a>
-                    <a href="#" class="ps-5 fw-bold py-2 my-1 text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-user-group text-secondary me-2"></i> Staff</a></li>
-                    <a href="#" class="ps-5 fw-bold py-2 my-1 text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark text-secondary me-2"></i> Facilities</a></li>
-                    <a href="#" class="ps-5 fw-bold py-2 my-1 text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt text-secondary me-2"></i> Bookings</a></li>
-                    <a href="#" class="ps-5 fw-bold py-2 my-1 text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-regular fa-id-card text-secondary me-2"></i> Members</a></li>
-                    <a href="#" class="ps-5 fw-bold py-2 my-1 text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-circle-user text-secondary me-2"></i> Account</a></li>
-                    <a href="#" class="ps-5 fw-bold py-2 my-1 text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-gears text-secondary me-2"></i> Settings</a></li>
+                    <a href="#" class="ps-5 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-layer-group text-white me-2"></i> Dashboard</a>
+                    <a href="#" class="ps-5 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-user-group text-secondary me-2"></i> Staff</a></li>
+                    <a href="#" class="ps-5 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark text-secondary me-2"></i> Facilities</a></li>
+                    <a href="#" class="ps-5 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt text-secondary me-2"></i> Bookings</a></li>
+                    <a href="#" class="ps-5 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-regular fa-id-card text-secondary me-2"></i> Members</a></li>
+                    <a href="#" class="ps-5 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-circle-user text-secondary me-2"></i> Account</a></li>
+                    <a href="#" class="ps-5 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-gears text-secondary me-2"></i> Settings</a></li>
                 </ul>
             </div>
 
 
             <!-- Main page -->
-            <div class="w-100 bg-light p-0" style="overflow: hidden;">
+            <div class="theme w-100 bg-light p-0" style="overflow: hidden;">
                 <div class="w-100 bg-white d-flex p-2">
                     <!-- Toggler -->
                     <div class="navbar-light me-3 d-md-none">
@@ -60,45 +60,160 @@
                     </div>
                 </div>
 
-                <div class="p-5 pt-2">
+                <div class="p-3 pt-2 vh-100 overflow-auto">
                     <p class="h3 m-0">Welcome Emmanuel</p>
                     <p>19 Auguest, Friday</p>
 
                     <!-- Features -->
                     <div class="mb-3 pb-1 features text-nowrap">
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">280</span> <br> Members</p> <i class="fa-solid fa-user-group text-warning fs-1"></i> </div>
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">10</span> <br> Facilities</p> <i class="fa-solid fa-landmark text-primary fs-1"></i> </div>
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">4</span> <br> Bookings</p> <i class="fa-solid fa-receipt text-danger fs-1"></i> </div>
-                        <div class="card p-2 me-4 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">31,462</span> <br> <span class="text-nowrap">Total Earnings</span></p> <i class="fa-solid fa-circle-dollar-to-slot text-success fs-1"></i> </div>
-                      </div>
+                        <div class="card p-2 me-3 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">280</span> <br> Members</p> <i class="fa-solid fa-user-group text-warning fs-1"></i> </div>
+                        <div class="card p-2 me-3 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">10</span> <br> Facilities</p> <i class="fa-solid fa-landmark text-primary fs-1"></i> </div>
+                        <div class="card p-2 me-3 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">4</span> <br> Bookings</p> <i class="fa-solid fa-receipt text-danger fs-1"></i> </div>
+                        <div class="card p-2 me-3 border-0 shadow-sm text-center d-inline-flex flex-row align-items-center px-4 py-2 rounded-custom"><p class="m-0 me-2"><span class="h5 fw-bold">31,462</span> <br> <span class="text-nowrap">Total Earnings</span></p> <i class="fa-solid fa-circle-dollar-to-slot text-success fs-1"></i> </div>
+                    </div>
 
-                    <div class="row m-0">
+                    <div class="row m-0 mb-3">
                         <!-- Chart -->
-                        <div class="card shadow-sm border-0 col-md-7 rounded-custom overflow-hidden">
-                            <img src="../img/chart.png" alt="Booking chart" class="w-100">
+                        <div class="col-lg-7 col-md-6 d-flex pe-3 p-0">
+                            <div class="card shadow-sm border-0 rounded-custom overflow-hidden justify-content-center">
+                                <img src="../img/chart.png" alt="Booking chart" class="w-100">
+                            </div>
                         </div>
                         <!-- Staff -->
-                        <div class="col-md-5 pe-0">
-                            <div class="card shadow-sm border-0 rounded-custom">
+                        <div class="col-lg-5 col-md-6 p-0 mt-3 mt-md-0">
+                            <div class="card shadow-sm border-0 rounded-custom h-100 overflow-hidden">
                                 <p class="px-2 mt-2 m-0">Staff</p>
-                                <table class="table table-striped">
+                                <table class="theme-text table table-striped table-borderless fs-small">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
                                             <th>Role</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="">
                                         <tr>
-                                            <td>
-                                                <img src="../img/ama_doe.png" alt="" style="height: 50px; width: 50px;">
+                                            <td class="d-flex">
+                                                <img src="../img/ama_doe.png" alt="" class="me-2" style="height: 40px; width: 40px;">
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-bold">Ama Doe</p>
+                                                    <p class="p-0 text-secondary m-0">example@me.com</p>
+                                                </div>
                                             </td>
-                                            <td class="align-middle">Admin</td>
+                                            <td class="align-middle fw-bold">Admin</td>
                                         </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <img src="../img/frank_bonsu.png" alt="" class="me-2" style="height: 40px; width: 40px;">
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-bold">Frank Bonsu</p>
+                                                    <p class="p-0 text-secondary m-0">example@me.com</p>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle fw-bold">Manager</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <img src="../img/john_owusu.png" alt="" class="me-2" style="height: 40px; width: 40px;">
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-bold">John Owusu</p>
+                                                    <p class="p-0 text-secondary m-0">example@me.com</p>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle fw-bold">Gym Instructor</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex">
+                                                <img src="../img/kofi_ansah.png" alt="" class="me-2" style="height: 40px; width: 40px;">
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-bold">Kofi Ansah</p>
+                                                    <p class="p-0 text-secondary m-0">example@me.com</p>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle fw-bold">Gym Instructor</td>
+                                        </tr>
+                                        <tfoot class="border-top">
+                                            <tr>
+                                                <td colspan="2" class="pb-0">
+                                                    <a href="#" class="text-decoration-none float-end fw-bold">View all</a>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
                                     </tbody>
-                                    <tfoot></tfoot>
                                 </table>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Facilities -->
+                    <div class="card shadow-sm border-0 rounded-custom p-2 mb-3">
+                        <p class="fw-bold mb-2 ps-2">Facilities</p>
+                        <div class="pb-1 features text-nowrap">
+                            <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                <img src="../img/dashboard-turf.png" class="w-100 rounded-custom" alt="Astro turf">
+                                <div class="card-body ps-2 pt-1">
+                                    <p class="m-0 fw-bold">GYM</p>
+                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold mt-3 bg-danger-opacity">Booked</div>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                <img src="../img/dashboard_basketball.png" class="w-100 rounded-custom" alt="Astro turf">
+                                <div class="card-body ps-2 pt-1">
+                                    <p class="m-0 fw-bold">GYM</p>
+                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity">Available</div>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                <img src="../img/dashboard_basketball.png" class="w-100 rounded-custom" alt="Astro turf">
+                                <div class="card-body ps-2 pt-1">
+                                    <p class="m-0 fw-bold">GYM</p>
+                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity"> Available </div>
+                                </div>
+                            </div>
+                            <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                <img src="../img/dashboard-turf.png" class="w-100 rounded-custom" alt="Astro turf">
+                                <div class="card-body ps-2 pt-1">
+                                    <p class="m-0 fw-bold">GYM</p>
+                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold mt-3 bg-danger-opacity">Booked</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- List of bookings -->
+                    <div class="card shadow-sm border-0 rounded-custom p-2 mb-5 overflow-auto">
+                        <p class="fw-bold mb-2 ps-2">List of bookings</p>
+                        <div class="d-flex flex-row features">
+                            <table class="table table-borderless text-center theme-text">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-start">Facilities</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Time</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-secondary">
+                                    <tr class="align-middle text-nowrap">
+                                        <td class="text-start"> <img src="../img/bball.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Basketball</p> </td>
+                                        <td> 09-08-2022 </td>
+                                        <td> 09:00AM - 10:00AM </td>
+                                        <td> GH₵ 100.00/hr </td>
+                                        <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Available</div> </td>
+                                    </tr>
+                                    <tr class="align-middle text-nowrap">
+                                        <td class="text-start"> <img src="../img/astro-turf.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
+                                        <td> 09-08-2022 </td>
+                                        <td> 09:00AM - 10:00AM </td>
+                                        <td> GH₵ 100.00/hr </td>
+                                        <td> <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Booked</div> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
