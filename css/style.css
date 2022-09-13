@@ -76,6 +76,25 @@
 }
 .bg-success-opacity {
   background-color: rgba(0, 255, 81, 0.402);
+  color: #fff;
+}
+.bg-success-opacity:hover {
+  background-color: transparent;
+  color: rgba(0, 255, 81, 0.402);
+  border: 1px solid rgba(0, 255, 81, 0.402);
+}
+.bg-theme-opacity {
+  background-color: #344767;
+  color: #fff;
+}
+.bg-theme-opacity:hover {
+  background-color: transparent;
+  border: 1px solid #344767;
+  color: #344767;
+}
+.text-hover-theme:hover {
+  border: 1px solid #344767;
+  color: #344767;
 }
 
 /* Effects */
