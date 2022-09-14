@@ -287,12 +287,34 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* Lists */
-  /* Tick */
+/* Tick */
 .tick li:before {
-  content: '✓';
+  content: "✓";
   font-weight: 600;
   padding-right: 5px;
 }
+
+/* Dashboard */
+.sidebar {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 50% !important;
+    opacity: 1;
+    position: relative !important;
+    visibility: visible;
+  }
+}
+
+/* Theme */
+
+<<<<<<< HEAD
 
 
 
@@ -323,3 +345,5 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* Theme */
+=======
+>>>>>>> michael_8/9/2022
