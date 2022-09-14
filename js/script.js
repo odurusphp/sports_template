@@ -1,3 +1,4 @@
+
 // Forms
 function validate() {
   document.getElementById("form").classList.add("was-validated");
@@ -73,7 +74,7 @@ rangeInput.forEach((input) => {
 // Dashboard
 function showSidebar() {  
   document.getElementById('sidebar').style.visibility = 'visible';
-  document.getElementById('sidebar').style.width = '50%';
+  document.getElementById('sidebar').style.width = '100%';
   document.getElementById('sidebar').style.opacity = '1';
   document.getElementById('sidebar').style.position = 'absolute';
 }
@@ -82,5 +83,6 @@ function showSidebar() {
 function hideSidebar() {
   document.getElementById('sidebar').style.opacity = '0';
   document.getElementById('sidebar').style.width = '0';
+  document.getElementById('sidebar').style.position = 'relative';
   document.getElementById('sidebar').style.visibility = 'hidden';
 }
