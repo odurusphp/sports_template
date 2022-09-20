@@ -119,6 +119,42 @@
 }
 
 /* Carousel */
+.carousel-container {
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (min-width: 760px) {
+  .carousel-container {
+    max-height: 400px;
+  }
+}
+/* Carousel backgrounds */
+.carousel-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.carousel-background1 {
+  background-image: url('../img/webp/carou1_mobileV.webp');
+}
+.carousel-background2 {
+  background-image: url('../img/webp/carou2_mobileV.webp');
+}
+.carousel-background3 {
+  background-image: url('../img/webp/carou3_mobileV.webp');
+}
+@media screen and (min-width: 760px) {
+  .carousel-background1 {
+    background-image: url('../img/webp/carou1.webp');
+  }
+  .carousel-background2 {
+    background-image: url('../img/webp/carou2.webp');
+  }
+  .carousel-background3 {
+    background-image: url('../img/webp/carou3.webp');
+  }
+}
 .overlay-dark {
   filter: brightness(30%);
 }
@@ -353,7 +389,8 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-<<<<<<< HEAD
+
+
 
 
 
@@ -393,10 +430,8 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-<<<<<<< HEAD
+
 /* Theme */
-=======
->>>>>>> michael_8/9/2022
 /* Browser Compatibility */
 .features {
   overflow: scroll;
@@ -425,5 +460,3 @@ input[type="range"]::-moz-range-thumb {
 .theme td {
   color: #344767;
 }
-
->>>>>>> fiifi_sept6
