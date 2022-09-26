@@ -1,7 +1,7 @@
 :root {
   --primary: #0db93e;
   --primary-opacity: rgba(93, 196, 14, 0.5);
-  --light: #d9d9d9;
+  --light: #C5C7CD;
 }
 
 ::placeholder {
@@ -21,7 +21,9 @@
 .text-success {
   color: var(--primary) !important;
 }
-
+.text-light {
+  color: var(--light) !important;
+}
 .container {
   overflow: hidden;
 }
@@ -29,6 +31,9 @@
 /* Forms */
 .form-check-input {
   border-color: var(--light);
+}
+.form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(24, 220, 24, 0.25);
 }
 .form-check-input:focus {
   border-color: var(--primary);
