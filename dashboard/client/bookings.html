@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - JMJ Sports Center</title>
+    <title>Bookings - JMJ Sports Center</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/fontawesome.min.css">
@@ -18,9 +18,9 @@
                 <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
                 <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
                 <ul class="list-unstyled mt-4 p-3">
-                    <a href="index.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-layer-group text-white me-2"></i> Dashboard</a>
+                    <a href="index.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-layer-group text-secondary me-2"></i> Dashboard</a></li>
                     <a href="facilities.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-user-group text-secondary me-2"></i> Facilities</a></li>
-                    <a href="bookings.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark text-secondary me-2"></i> Bookings</a></li>
+                    <a href="bookings.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-landmark text-white me-2"></i> Bookings</a>
                     <a href="#" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt text-secondary me-2"></i> Membership</a></li>
                     <a href="#" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-credit-card text text-secondary me-2"></i> Billings</a></li>
                     <a href="#" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-circle-user text-secondary me-2"></i> Profile Settings</a></li>
@@ -60,51 +60,20 @@
                 </div>
 
                 <div class="p-3 pt-2 vh-100 overflow-auto">
-                    <p class="h3 m-0">Welcome Emmanuel</p>
-                    <p>19th August, Friday</p>
 
-                    <!-- Facilities -->
-                    <div class="card shadow-sm border-0 rounded-custom mb-3">
-                        <span><p class="fw-bold mb-2 ps-2 pt-2 text-dark">Facilities <a href="#" class="float-end text-dark fs-small me-5 text-decoration-none">See All</a></p></span>
-                        <div class="col d-flex pb-1 px-2 features text-nowrap mb-3">
-                            <div class="card bg-light-custom border-0 overflow-hidden rounded-custom me-3" style="width: 220px;">
-                                <div class="d-flex overflow-hidden rounded-custom">
-                                    <img src="/img/dashboard-turf.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                    <div class="row mb-3">
+                        <div class="col-md-7">
+                            <!-- Search bar -->
+                            <div class="d-flex align-items-center">
+                                <div class="input-group border-0 bg-white me-3" style="border-radius: 40px;">
+                                    <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <span class="input-group-text bg-white border-0" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
                                 </div>
-                                <div class="col card-body ps-2 pt-1">
-                                    <p class="m-0 fw-bold">GYM</p>
-                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                    <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold mt-3 bg-danger-opacity">Booked</div>
-                                </div>
-                            </div>
-                            <div class="card bg-light-custom border-0 overflow-hidden rounded-custom me-3" style="width: 220px;">
-                                <div class="d-flex overflow-hidden rounded-custom">
-                                    <img src="/img/dashboard_basketball.png" class="w-100 hover-enlarge transition" alt="An image of a basketball court">
-                                </div>
-                                <div class="col card-body ps-2 pt-1">
-                                    <p class="m-0 fw-bold">GYM</p>
-                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                    <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity">Available</div>
-                                </div>
-                            </div>
-                            <div class="card bg-light-custom border-0 overflow-hidden rounded-custom me-3" style="width: 220px;">
-                                <div class="d-flex overflow-hidden rounded-custom">
-                                    <img src="/img/dashboard_tennis.png" class="w-100 hover-enlarge transition" alt="An image of a lawn tennis court">
-                                </div>
-                                <div class="col card-body ps-2 pt-1">
-                                    <p class="m-0 fw-bold">GYM</p>
-                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                    <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity"> Available </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border-1 overflow-hidden p-3 border border-1 border-dark rounded-custom" style="width: 220px;">
-                                <div class="d-flex overflow-visible rounded-custom">
-                                    <img src="/img/calendar.png" class="w-100" alt="An image of a Gym">
-                                </div>
+                                <i class="fa-solid fa-sliders fs-4 btn theme-text"></i>
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- List of bookings -->
                     <div class="card shadow-sm border-0 rounded-custom p-2 mb-4 overflow-auto">
                         <p class="fw-bold mb-2 ps-2 text-dark">Bookings</p>
@@ -141,31 +110,6 @@
                                         <td> GH₵ 100.00/hr </td>
                                         <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- Billing History -->
-                    <div class="card shadow-sm border-0 rounded-custom p-2 mb-5 overflow-auto">
-                        <div>
-                            <span>
-                                <span class="fw-bold mb-2 ps-2 text-dark">Billing History</span> 
-                                <span class="fs-small fw-light float-end me-1"><i class="fa-solid fa-sliders me-1"></i> Date Filter <i class="fa-regular fa-newspaper ms-2 me-1"></i>Generate Report</span> </span>   
-                            </span>
-                        </div>
-                        <div class="d-flex flex-row features">
-                            <table class="table table-borderless table-striped text-center theme-text">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="text-start">Invoice</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Time</th>
-                                        <th scope="col">Amount</th>
-                                        <th scope="col">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-secondary">
                                     <tr class="align-middle text-nowrap">
                                         <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Basketball</p> </td>
                                         <td> 09-08-2022 </td>
@@ -188,16 +132,16 @@
                                         <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/swimming-2.png" alt="An image of a swimming pool" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-Turf</p> </td>
+                                        <td class="text-start"> <img src="/img/astro-turf.png" alt="basketball" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00/hr </td>
                                         <td> <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
                                     </tr>
+                                   
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </div>
             </div>

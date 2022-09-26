@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - JMJ Sports Center</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-light overflow-hidden">
+    <div class="container-fluid p-0" style="height: 100vh;">
+        <div class="d-flex">
+            <!-- Sidebar -->
+            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
+                <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
+                <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
+                <ul class="list-unstyled mt-4 p-3">
+                    <a href="index.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-layer-group text-secondary me-2"></i> Dashboard</a></li>
+                    <a href="facilities.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-layer-group text-white me-2"></i> Facilities</a>
+                    <a href="bookings.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark text-secondary me-2"></i> Bookings</a></li>
+                    <a href="#" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt text-secondary me-2"></i> Membership</a></li>
+                    <a href="#" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-credit-card text text-secondary me-2"></i> Billings</a></li>
+                    <a href="#" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-circle-user text-secondary me-2"></i> Profile Settings</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Main page -->
+            <div class="theme w-100 bg-light p-0" style="overflow: hidden;">
+                <div class="w-100 bg-white d-flex p-2">
+                    <!-- Toggler -->
+                    <div class="navbar-light me-3 d-md-none">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                    </div>
+
+                    <!-- Search bar -->
+                    <div class="input-group border bg-white" style="border-radius: 40px;">
+                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text bg-white border-0" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="align-self-center mx-3 position-relative">
+                        <i class="fa-solid fa-bell text-secondary fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 15px; width: 15px;"> 9 </span>
+                    </div>
+
+                    <!-- User -->
+                    <div class="bs-2 d-flex align-items-center border-start ps-4">
+                        <p class="text-nowrap m-0 fw-bold me-2">Manuel Nanor</p>
+                        <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
+                            <img src="/img/user.png" class="border border-3 border-white rounded-circle" style="transform: scale(.85);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 pt-2 vh-100 overflow-auto">
+                    
+                    <!-- Facilities -->
+                    <div class="card shadow-sm border-0 rounded-custom mb-5">
+                        <p class="fw-bold mb-1 ps-2 pt-2">Facilities</p>
+                    
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xlg-auto px-2 mb-4">
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard-turf.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard_basketball.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard_tennis.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard_gym.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard-turf.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard_basketball.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard_tennis.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2 w-100 w-md-auto mt-3">
+                                    <div class="d-flex overflow-hidden rounded-custom">
+                                        <img src="/img/dashboard_gym.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                    </div>
+                                    <div class="card-body ps-2 pt-1">
+                                        <p class="m-0 fw-bold">GYM</p>
+                                        <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <div class="d-flex">
+                                            <div class="pe-1 w-100">
+                                                <button class="btn bg-success-opacity text-hover-theme rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">Book</button>
+                                            </div>
+                                            <div class="ps-1 w-100">
+                                                <button class="btn bg-theme-opacity rounded fs-small d-inline-block px-4 fw-bold mt-3 py-0 w-100">View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
