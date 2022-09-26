@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership plan - JMJ Sports Center</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-light overflow-hidden">
+    <div class="container-fluid p-0" style="height: 100vh;">
+        <div class="d-flex">
+            <!-- Sidebar -->
+            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
+                <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
+                <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
+                <ul class="list-unstyled mt-4 p-3">
+                    <a href="index.html" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-layer-group text-secondary me-2"></i> Dashboard</a></li>
+                    <a href="facilities.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark text-secondary me-2"></i> Facilities</a></li>
+                    <a href="bookings.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt text-secondary me-2"></i> Bookings</a></li>
+                    <a href="plan.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-id-card text-white me-2"></i> Membership plan</a>
+                    <a href="billing.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-credit-card text-secondary me-2"></i> Billings</a></li>
+                    <a href="profile.html" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-gears text-secondary me-2"></i> Profile Settings</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Main page -->
+            <div class="theme w-100 bg-light p-0" style="overflow: hidden;">
+                <div class="w-100 bg-white d-flex p-2 fs-small">
+                    <!-- Toggler -->
+                    <div class="navbar-light me-3 d-md-none">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                    </div>
+
+                    <!-- Search bar -->
+                    <div class="input-group border bg-white" style="border-radius: 40px;">
+                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text bg-white border-0" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
+                    </div>
+
+                    <!-- Cart -->
+                    <div class="align-self-center mx-2 position-relative">
+                        <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 2 </span>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="align-self-center mx-3 position-relative">
+                        <i class="fa-solid fa-bell text-light fs-6"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 9 </span>
+                    </div>
+
+                    <!-- User -->
+                    <div class="bs-2 d-flex align-items-center border-start ps-2">
+                        <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-md-block">Manuel Nanor</p>
+                        <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
+                            <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Activities -->
+                <div class="p-3 vh-100 overflow-auto pb-5">
+                    <p class="h5 mb-4">Membership Plan</p>
+                    
+                    <div class="row g-4 gy-5 text-white mb-5">
+                        <div class="col-md">
+                            <div class="card card-modified border-0 rounded-1 bg-dark px-4 py-3">
+                                <header class="d-flex align-items-center flex-column mb-3">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                                        <i class="fas fa-running"></i>
+                                    </div>
+                                    <p class="fw-bold fs-4 m-0">STARTER PLAN</p>
+                                    <p class="m-0 fw-bold fs-small">6 MONTH GHC300 /M</p>
+                                </header>
+                                <ul class="text-secondary list-unstyled tick">
+                                    <li class="py-1 px-4">Free Riding</li>
+                                    <li class="py-1 px-4">Unlimited Equipments</li>
+                                    <li class="py-1 px-4">Personal Trainer</li>
+                                    <li class="py-1 px-4">Weight Losing Classes</li>
+                                    <li class="py-1 px-4">Month to Mouth</li>
+                                </ul>
+                                <button class="btn btn-success">JOIN NOW</button>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card card-modified border-0 rounded-1 bg-dark px-4 py-3">
+                                <header class="d-flex align-items-center flex-column mb-3">
+                                    <div class="bg-danger rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                                        <i class="fas fa-dumbbell"></i>
+                                    </div>
+                                    <p class="fw-bold fs-4 m-0">PREMIUM PLAN</p>
+                                    <p class="m-0 fw-bold fs-small">6 MONTH GHC300 /M</p>
+                                </header>
+                                <ul class="text-secondary list-unstyled tick">
+                                    <li class="py-1 px-4">Free Riding</li>
+                                    <li class="py-1 px-4">Unlimited Equipments</li>
+                                    <li class="py-1 px-4">Personal Trainer</li>
+                                    <li class="py-1 px-4">Weight Losing Classes</li>
+                                    <li class="py-1 px-4">Month to Mouth</li>
+                                </ul>
+                                <button class="btn btn-success">JOIN NOW</button>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card card-modified border-0 rounded-1 bg-dark px-4 py-3">
+                                <header class="d-flex align-items-center flex-column mb-3">
+                                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
+                                        <i class="fas fa-person-booth"></i>
+                                    </div>
+                                    <p class="fw-bold fs-4 m-0">ULTIMATE PLAN</p>
+                                    <p class="m-0 fw-bold fs-small">6 MONTH GHC300 /M</p>
+                                </header>
+                                <ul class="text-secondary list-unstyled tick">
+                                    <li class="py-1 px-4">Free Riding</li>
+                                    <li class="py-1 px-4">Unlimited Equipments</li>
+                                    <li class="py-1 px-4">Personal Trainer</li>
+                                    <li class="py-1 px-4">Weight Losing Classes</li>
+                                    <li class="py-1 px-4">Month to Mouth</li>
+                                </ul>
+                                <button class="btn btn-success">JOIN NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
