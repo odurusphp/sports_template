@@ -40,21 +40,27 @@
 
                     <!-- Search bar -->
                     <div class="input-group border bg-white" style="border-radius: 40px;">
-                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <span class="input-group-text bg-white border-0" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
+                    </div>
+
+                    <!-- Cart -->
+                    <div class="align-self-center mx-2 position-relative">
+                        <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 2 </span>
                     </div>
 
                     <!-- Notifications -->
                     <div class="align-self-center mx-3 position-relative">
-                        <i class="fa-solid fa-bell text-secondary fs-5"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 15px; width: 15px;"> 9 </span>
+                        <i class="fa-solid fa-bell text-light fs-6"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 9 </span>
                     </div>
 
                     <!-- User -->
-                    <div class="bs-2 d-flex align-items-center border-start ps-4">
-                        <p class="text-nowrap m-0 fw-bold me-2">Manuel Nanor</p>
-                        <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
-                            <img src="/img/user.png" class="border border-3 border-white rounded-circle" style="transform: scale(.85);">
+                    <div class="bs-2 d-flex align-items-center border-start ps-2">
+                        <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-md-block">Manuel Nanor</p>
+                        <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
+                            <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
                         </div>
                     </div>
                 </div>
@@ -148,11 +154,14 @@
 
                     <!-- Billing History -->
                     <div class="card shadow-sm border-0 rounded-custom p-2 mb-5 overflow-auto">
-                        <div>
-                            <span>
-                                <span class="fw-bold mb-2 ps-2 text-dark">Billing History</span> 
-                                <span class="fs-small fw-light float-end me-1"><i class="fa-solid fa-sliders me-1"></i> Date Filter <i class="fa-regular fa-newspaper ms-2 me-1"></i>Generate Report</span> </span>   
-                            </span>
+                        <div class="d-flex flex-column flex-md-row align-items-md-center mb-4">
+                            <div class="mb-3 mb-md-0">
+                                <p class="fw-bold m-0 ps-2 pt-2">Billing history</p>
+                            </div>
+                            <div class="flex-grow-1 d-flex justify-content-end align-items-md-center me-3">
+                                <div class="btn btn-sm fw-lighter me-2"><i class="fa-solid fa-sliders fs-6"></i> <span class="me-3">Date Filter</span></div>
+                                <div class="btn btn-sm fw-lighter"><i class="fa-regular fa-pen-to-square fs-6"></i> <span>Generate Report</span></div>
+                            </div>
                         </div>
                         <div class="d-flex flex-row features">
                             <table class="table table-borderless table-striped text-center theme-text">
