@@ -14,7 +14,7 @@
     <div class="container-fluid p-0" style="height: 100vh;">
         <div class="d-flex">
             <!-- Sidebar -->
-            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
+            <div class="bg-dark vh-100 sidebar text-center text-secondary overflow-auto" id="sidebar">
                 <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
                 <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
                 <ul class="list-unstyled mt-4 p-3">
@@ -33,11 +33,11 @@
                 
                 <!-- Top Bar -->
                 <div class="w-100 bg-white d-flex p-2 fs-small flex-column">
-                    <div class="w-100 d-flex fs-small">
+                    <div class="w-100 d-flex fs-small align-items-center">
                         <!-- Toggler -->
                         <div class="navbar-light me-3 d-md-none">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
-                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon" style="height: 25px; width: 25px;"></span>
                               </button>
                         </div>
     
@@ -45,24 +45,24 @@
                             <!-- Search bar -->
                             <div id="searchbarSmall" class="input-group border bg-white w-auto flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
                                 <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <span class="input-group-text bg-white border-0 btn py-2 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
+                                <span class="input-group-text bg-transparent border-0 btn py-1 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-light fs-6"></i></span>
                             </div>
     
                             <!-- Cart -->
-                            <div class="align-self-center mx-2 position-relative">
+                            <div class="align-self-center mx-2 position-relative btn p-0">
                                 <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 2 </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 3px;"> 2 </span>
                             </div>
     
                             <!-- Notifications -->
-                            <div class="align-self-center mx-3 position-relative">
+                            <div class="align-self-center mx-3 position-relative btn p-0">
                                 <i class="fa-solid fa-bell text-light fs-6"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 9 </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 4px; margin-left: -2px;"> 9 </span>
                             </div>
     
                             <!-- User -->
                             <div class="bs-2 d-flex align-items-center border-start ps-2">
-                                <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-md-block">Manuel Nanor</p>
+                                <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-sm-block">Manuel Nanor</p>
                                 <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
                                     <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
                                 </div>
@@ -81,8 +81,8 @@
                 <div class="p-3 vh-100 overflow-auto pb-5">
                     <p class="h5 mb-4">Membership Plan</p>
                     
-                    <div class="row g-4 gy-5 text-white mb-5">
-                        <div class="col-md">
+                    <div class="d-flex g-4 gy-5 text-white mb-5 flex-wrap justify-content-center justify-content-sm-start">
+                        <div class="mb-3 me-3">
                             <div class="card card-modified fs-small border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
                                 <header class="d-flex align-items-center flex-column mb-3">
                                     <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
@@ -101,7 +101,7 @@
                                 <button class="btn btn-success btn-sm">JOIN NOW</button>
                             </div>
                         </div>
-                        <div class="col-md">
+                        <div class="mb-3 me-3">
                             <div class="card card-modified fs-small border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
                                 <header class="d-flex align-items-center flex-column mb-3">
                                     <div class="bg-danger rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
@@ -120,7 +120,7 @@
                                 <button class="btn btn-success btn-sm">JOIN NOW</button>
                             </div>
                         </div>
-                        <div class="col-md">
+                        <div class="mb-3 me-3 pb-5">
                             <div class="card card-modified fs-small border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
                                 <header class="d-flex align-items-center flex-column mb-3">
                                     <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">

@@ -14,16 +14,16 @@
     <div class="container-fluid p-0" style="height: 100vh;">
         <div class="d-flex">
             <!-- Sidebar -->
-            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
+            <div class="bg-dark vh-100 sidebar text-center text-secondary overflow-auto" id="sidebar">
                 <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
                 <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
                 <ul class="list-unstyled mt-4 p-3">
                     <a href="index.html" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-layer-group text-secondary me-2"></i> Dashboard</a></li>
                     <a href="facilities.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark text-secondary me-2"></i> Facilities</a></li>
                     <a href="bookings.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt text-secondary me-2"></i> Bookings</a></li>
-                    <a href="plan.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-id-card text-secondary me-2"></i> Membership Plan</a></li>
+                    <a href="plan.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-id-card text-secondary me-2"></i> Membership plan</a></li>
                     <a href="billing.html" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-credit-card text-secondary me-2"></i> Billings</a></li>
-                    <a href="settings.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-gears text-white me-2"></i> Profile Settings</a>
+                    <a href="profile.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-gears text-white me-2"></i> Profile Settings</a>
                 </ul>
             </div>
 
@@ -33,11 +33,11 @@
 
                 <!-- Top Bar -->
                 <div class="w-100 bg-white d-flex p-2 fs-small flex-column">
-                    <div class="w-100 d-flex fs-small">
+                    <div class="w-100 d-flex fs-small align-items-center">
                         <!-- Toggler -->
                         <div class="navbar-light me-3 d-md-none">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
-                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon" style="height: 25px; width: 25px;"></span>
                               </button>
                         </div>
     
@@ -45,24 +45,24 @@
                             <!-- Search bar -->
                             <div id="searchbarSmall" class="input-group border bg-white w-auto flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
                                 <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <span class="input-group-text bg-white border-0 btn py-2 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
+                                <span class="input-group-text bg-transparent border-0 btn py-1 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-light fs-6"></i></span>
                             </div>
     
                             <!-- Cart -->
-                            <div class="align-self-center mx-2 position-relative">
+                            <div class="align-self-center mx-2 position-relative btn p-0">
                                 <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 2 </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 3px;"> 2 </span>
                             </div>
     
                             <!-- Notifications -->
-                            <div class="align-self-center mx-3 position-relative">
+                            <div class="align-self-center mx-3 position-relative btn p-0">
                                 <i class="fa-solid fa-bell text-light fs-6"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 9 </span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 4px; margin-left: -2px;"> 9 </span>
                             </div>
     
                             <!-- User -->
                             <div class="bs-2 d-flex align-items-center border-start ps-2">
-                                <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-md-block">Manuel Nanor</p>
+                                <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-sm-block">Manuel Nanor</p>
                                 <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
                                     <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
                                 </div>
@@ -80,19 +80,19 @@
                 <!-- Profile Activities -->
                 <div class="p-3 vh-100 overflow-auto pb-5">
                     <p class="h4">Profile Settings</p>
-                    <div class="d-flex flex-column flex-md-row text-wrap">
-                        <a href="profile.html" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-md-3 btn-outline-success">Profile</a>
-                        <a href="" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-md-3">Password</a>
-                        <a href="" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-md-3 text-nowrap">Choose plan</a>
-                        <a href="notification.html" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-md-3">Notifications</a>
+                    <div class="d-flex flex-column flex-sm-row text-wrap">
+                        <a href="profile.html" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-sm-3 btn-outline-success">Profile</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-sm-3">Password</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-sm-3 text-nowrap">Choose plan</a>
+                        <a href="notification.html" class="btn btn-sm btn-outline-secondary rounded-3 py-0 px-3 mb-3 me-sm-3">Notifications</a>
                     </div>
                     
                     
                     <!-- Activity page -->
                     <div class="mt-2">
                         <p class="text-secondary">Profile Picture</p>
-                        <div class="d-flex align-items-center border-bottom pb-4 border-secondary">
-                            <img src="/img/frank_bonsu-round.png" alt="profile picture" class="rounded-circle me-3" style="height: 100px; width: 100px;">
+                        <div class="d-flex align-items-center border-bottom pb-4 border-secondary flex-column flex-sm-row">
+                            <img src="/img/frank_bonsu-round.png" alt="profile picture" class="rounded-circle me-3 mb-3" style="height: 100px; width: 100px;">
                             <div class="text-nowrap">
                                 <button class="btn btn-success py-1 btn-sm">Change photo</button>
                                 <button class="btn btn-secondary py-1 btn-sm">Delete photo</button>
@@ -102,25 +102,25 @@
 
                         <!-- Profile details -->
                         <form action="" id="form" class="mt-4 row mb-5">
-                            <div class="col-md-6">
-                                <input type="text" name="fname" id="fname" placeholder="first name" class="col-md-6 form-control px-3 py-2 mb-2 bg-transparent fs-small">
+                            <div class="col-sm-6">
+                                <input type="text" name="fname" id="fname" placeholder="first name" class="form-control px-3 py-2 mb-2 bg-transparent fs-small">
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" name="lname" id="lname" placeholder="last name" class="col-md-6 form-control px-3 py-2 mb-2 bg-transparent fs-small">
+                            <div class="col-sm-6">
+                                <input type="text" name="lname" id="lname" placeholder="last name" class="form-control px-3 py-2 mb-2 bg-transparent fs-small">
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" name="uname" id="uname" placeholder="username" class="col-md-6 form-control px-3 py-2 mb-2 bg-transparent fs-small">
+                            <div class="col-sm-6">
+                                <input type="text" name="uname" id="uname" placeholder="username" class="form-control px-3 py-2 mb-2 bg-transparent fs-small">
                             </div>
-                            <div class="col-md-6">
-                                <input type="email" name="email" id="email" placeholder="email address" class="col-md-6 form-control px-3 py-2 mb-2 bg-transparent fs-small">
+                            <div class="col-sm-6">
+                                <input type="email" name="email" id="email" placeholder="email address" class="form-control px-3 py-2 mb-2 bg-transparent fs-small">
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" name="location" id="location" placeholder="location" class="col-md-6 form-control px-3 py-2 mb-2 bg-transparent fs-small">
+                            <div class="col-sm-6">
+                                <input type="text" name="location" id="location" placeholder="location" class="form-control px-3 py-2 mb-2 bg-transparent fs-small">
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" name="phone" id="phone" placeholder="phone number" class="col-md-6 form-control px-3 py-2 mb-2 bg-transparent fs-small">
+                            <div class="col-sm-6">
+                                <input type="text" name="phone" id="phone" placeholder="phone number" class="form-control px-3 py-2 mb-2 bg-transparent fs-small">
                             </div>
-                            <div>
+                            <div class="mb-5">
                                 <button class="btn btn-sm btn-success w-auto" onclick="validate()">Update profile</button>
                             </div>
                         </form>
