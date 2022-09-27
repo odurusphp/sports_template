@@ -14,7 +14,7 @@
     <div class="container-fluid p-0" style="height: 100vh;">
         <div class="d-flex">
             <!-- Sidebar -->
-            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
+            <div class="bg-dark vh-100 sidebar text-center text-secondary overflow-auto" id="sidebar">
                 <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
                 <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
                 <ul class="list-unstyled mt-4 p-3">
@@ -30,38 +30,50 @@
 
             <!-- Main page -->
             <div class="theme w-100 bg-light p-0" style="overflow: hidden;">
-                <div class="w-100 bg-white d-flex p-2 fs-small">
-                    <!-- Toggler -->
-                    <div class="navbar-light me-3 d-md-none">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                    </div>
 
-                    <!-- Search bar -->
-                    <div class="input-group border bg-white" style="border-radius: 40px;">
-                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text bg-white border-0" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
-                    </div>
-
-                    <!-- Cart -->
-                    <div class="align-self-center mx-2 position-relative">
-                        <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 2 </span>
-                    </div>
-
-                    <!-- Notifications -->
-                    <div class="align-self-center mx-3 position-relative">
-                        <i class="fa-solid fa-bell text-light fs-6"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 9 </span>
-                    </div>
-
-                    <!-- User -->
-                    <div class="bs-2 d-flex align-items-center border-start ps-2">
-                        <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-md-block">Manuel Nanor</p>
-                        <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
-                            <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
+                <!-- Top Bar -->
+                <div class="w-100 bg-white d-flex p-2 fs-small flex-column">
+                    <div class="w-100 d-flex fs-small align-items-center">
+                        <!-- Toggler -->
+                        <div class="navbar-light me-3 d-md-none">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
+                                <span class="navbar-toggler-icon" style="height: 25px; width: 25px;"></span>
+                              </button>
                         </div>
+    
+                        <div class="d-flex flex-grow-1 justify-content-end">
+                            <!-- Search bar -->
+                            <div id="searchbarSmall" class="input-group border bg-white w-auto flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
+                                <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text bg-transparent border-0 btn py-1 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-light fs-6"></i></span>
+                            </div>
+    
+                            <!-- Cart -->
+                            <div class="align-self-center mx-2 position-relative btn p-0">
+                                <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 3px;"> 2 </span>
+                            </div>
+    
+                            <!-- Notifications -->
+                            <div class="align-self-center mx-3 position-relative btn p-0">
+                                <i class="fa-solid fa-bell text-light fs-6"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 4px; margin-left: -2px;"> 9 </span>
+                            </div>
+    
+                            <!-- User -->
+                            <div class="bs-2 d-flex align-items-center border-start ps-2">
+                                <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-sm-block">Manuel Nanor</p>
+                                <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
+                                    <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search bar stretched-->
+                    <div id="searchbar" class="input-group border bg-white w-100 d-none d-sm-none mt-2" style="border-radius: 40px;">
+                        <input type="text" id="searchbarInput" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text bg-white border-0 btn" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
                     </div>
                 </div>
 
@@ -71,7 +83,7 @@
                     
                     <form class="row" id="form">
                         <!-- Billing Information -->
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 pb-5">
                             <p class="mb-2">Billing Information <span class="float-end fw-lighter">All fields are required</span></p>
                             <select class="form-select bg-transparent mb-2 fs-small" aria-label="Default select example" required>
                                 <option selected disabled value="">Select Country</option>
@@ -90,7 +102,7 @@
                             </div>
                             <input type="text" name="apt" id="apt" placeholder="Apt, floor, building" class="col-sm-6 form-control px-3 py-2 mb-2 bg-transparent fs-small" required>
                             <div class="d-flex flex-column flex-sm-row mb-2">
-                                <div class="pe-sm-2 w-100">
+                                <div class="pe-sm-2 w-100 mb-2">
                                     <input type="text" name="postal" id="postal" placeholder="Postal Code" class="form-control px-3 py-2 bg-transparent fs-small" required>  
                                 </div>
                                 <div class="ps-sm-2 w-100">
@@ -100,20 +112,28 @@
 
                             <!-- Payment information -->
                             <p class="mb-2 mt-4">Payment Information</p>
-                            <input type="checkbox" name="paymentMethod" id="card" class="form-check-input me-2 d-inline-block mb-2"> <span class="fw-light">Credit/Debit card</span> <br>
-                            <input type="checkbox" name="paymentMethod" id="mobileMoney" class="form-check-input me-2 d-inline-block mb-2"> <span class="fw-light">Mobile Money</span>
+                            <div class="d-flex flex-column flex-sm-row mb-4 align-items-center">
+                                <div class="ps-sm-2 w-100 order-sm-last mb-3">
+                                    <img src="/img/payment-method.png" class="float-sm-end" style="height: 70px; width: 120px;" alt="">                                
+                                </div>
+                                <div class="pe-sm-2 w-100">
+                                    <input type="checkbox" name="paymentMethod" id="card" class="form-check-input me-2 d-inline-block mb-3"> <label for="card" class="fw-light">Credit/Debit card</label> <br>
+                                    <input type="checkbox" name="paymentMethod" id="mobileMoney" class="form-check-input me-2 d-inline-block"> <label for="mobileMoney" class="fw-light">Mobile Money</label>
+                                </div>
+                            </div>
+
                             <input type="text" name="cardNumber" id="cardNumber" placeholder="Credit/Debit card number" class="col-sm-6 form-control px-3 py-2 mb-2 bg-transparent fs-small" required>
                             <div class="d-flex flex-column flex-sm-row mb-2">
-                                <div class="pe-sm-2 w-100">
+                                <div class="pe-sm-2 w-100 mb-2">
                                     <input type="text" name="postal" id="postal" placeholder="MM/YY" class="form-control px-3 py-2 bg-transparent fs-small" required>  
                                 </div>
                                 <div class="ps-sm-2 w-100">
                                     <input type="text" name="city" id="city" placeholder="Security code" class="form-control px-3 py-2 bg-transparent fs-small" required>
                                 </div>
                             </div>
-                            <input type="checkbox" name="card" id="card" class="form-check-input me-2 d-inline-block mb-2"> <span class="fw-light">Save card details</span> <br>
+                            <input type="checkbox" name="card" id="saveCardDetails" class="form-check-input me-2 d-inline-block mb-2"> <label for="saveCardDetails" class="fw-light">Save card details</label> <br>
                             <p class="mt-4 mb-1">Automatically renew my subscription</p>
-                            <p class="fw-lighter mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, necessitatibus obcaecati corporis illo asperiores molestiae.</p>
+                            <p class="fw-light mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, necessitatibus obcaecati corporis illo asperiores molestiae.</p>
                             <p class="fw-light">By clicking the button, you agree to the Terms & Conditions</p>
                             <button class="btn btn-success mb-5 w-100" onclick="validate()">Confirm and pay</button>
                         </div>
@@ -125,9 +145,9 @@
                                 <p class="fs-6 border-bottom border-2 pb-3">Plan Summary</p>
                                 <p class="m-0">Starter plan <span class="float-end fw-lighter text-decoration-line-through">Ghc 300.00/month</span></p>
                                 <p class="text-success fw-light">First month <span class="float-end">Ghc 0.00</span></p>
-                                <p class="fw-lighter border-bottom border-2 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit animi, ratione autem reprehenderit</p>
+                                <p class="fw-light border-bottom border-2 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit animi, ratione autem reprehenderit</p>
                                 <p class="fs-6 mb-1">Total Amount <span class="fw-bold float-end">Ghc 0.00</span></p>
-                                <p class="fw-lighter border-bottom border-2 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit animi, ratione autem reprehenderit</p>
+                                <p class="fw-light border-bottom border-2 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit animi, ratione autem reprehenderit</p>
                                 <p class="text-center fw-light">Looking for something different? <span><a href="plan.html" class="text-success text-nowrap">View plans</a></span></p>
                             </div>
                         </div>
