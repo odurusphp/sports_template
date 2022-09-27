@@ -30,38 +30,48 @@
 
             <!-- Main page -->
             <div class="theme w-100 bg-light p-0" style="overflow: hidden;">
-                <div class="w-100 bg-white d-flex p-2 fs-small">
-                    <!-- Toggler -->
-                    <div class="navbar-light me-3 d-md-none">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                    </div>
-
-                    <!-- Search bar -->
-                    <div class="input-group border bg-white" style="border-radius: 40px;">
-                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text bg-white border-0" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
-                    </div>
-
-                    <!-- Cart -->
-                    <div class="align-self-center mx-2 position-relative">
-                        <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 2 </span>
-                    </div>
-
-                    <!-- Notifications -->
-                    <div class="align-self-center mx-3 position-relative">
-                        <i class="fa-solid fa-bell text-light fs-6"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 9 </span>
-                    </div>
-
-                    <!-- User -->
-                    <div class="bs-2 d-flex align-items-center border-start ps-2">
-                        <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-md-block">Manuel Nanor</p>
-                        <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
-                            <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
+                <div class="w-100 bg-white d-flex p-2 fs-small flex-column">
+                    <div class="w-100 bg-white d-flex p-2 fs-small">
+                        <!-- Toggler -->
+                        <div class="navbar-light me-3 d-md-none">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
                         </div>
+    
+                        <div class="d-flex flex-grow-1 justify-content-end">
+                            <!-- Search bar -->
+                            <div id="searchbarSmall" class="input-group border bg-white w-auto overflow-hidden flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
+                                <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text bg-white border-0 btn" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
+                            </div>
+    
+                            <!-- Cart -->
+                            <div class="align-self-center mx-2 position-relative">
+                                <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 2 </span>
+                            </div>
+    
+                            <!-- Notifications -->
+                            <div class="align-self-center mx-3 position-relative">
+                                <i class="fa-solid fa-bell text-light fs-6"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px;"> 9 </span>
+                            </div>
+    
+                            <!-- User -->
+                            <div class="bs-2 d-flex align-items-center border-start ps-2">
+                                <p class="text-nowrap m-0 fw-bold me-2 ms-4 d-none d-md-block">Manuel Nanor</p>
+                                <div class="border border-2 border-secondary rounded-circle overflow-hidden d-flex align-items-center justify-content-center" style="height: 35px; width: 35px;">
+                                    <img src="/img/user.png" class="rounded-circle" style="transform: scale(.70);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search bar stretched-->
+                    <div id="searchbar" class="input-group border bg-white w-100 overflow-hidden d-none d-sm-none" style="border-radius: 40px;">
+                        <input type="text" id="searchbarInput" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text bg-white border-0 btn" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
                     </div>
                 </div>
 
@@ -71,7 +81,7 @@
                     
                     <div class="row g-4 gy-5 text-white mb-5">
                         <div class="col-md">
-                            <div class="card card-modified border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
+                            <div class="card card-modified fs-small border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
                                 <header class="d-flex align-items-center flex-column mb-3">
                                     <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
                                         <i class="fas fa-running"></i>
@@ -86,11 +96,11 @@
                                     <li class="py-1 px-4">Weight Losing Classes</li>
                                     <li class="py-1 px-4">Month to Mouth</li>
                                 </ul>
-                                <button class="btn btn-success">JOIN NOW</button>
+                                <button class="btn btn-success btn-sm">JOIN NOW</button>
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="card card-modified border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
+                            <div class="card card-modified fs-small border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
                                 <header class="d-flex align-items-center flex-column mb-3">
                                     <div class="bg-danger rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
                                         <i class="fas fa-dumbbell"></i>
@@ -105,11 +115,11 @@
                                     <li class="py-1 px-4">Weight Losing Classes</li>
                                     <li class="py-1 px-4">Month to Mouth</li>
                                 </ul>
-                                <button class="btn btn-success">JOIN NOW</button>
+                                <button class="btn btn-success btn-sm">JOIN NOW</button>
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="card card-modified border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
+                            <div class="card card-modified fs-small border-0 rounded-1 bg-dark px-4 py-3 hover-enlarge-small transition">
                                 <header class="d-flex align-items-center flex-column mb-3">
                                     <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center fs-2" style="height: 70px; width: 70px;">
                                         <i class="fas fa-person-booth"></i>
@@ -124,7 +134,7 @@
                                     <li class="py-1 px-4">Weight Losing Classes</li>
                                     <li class="py-1 px-4">Month to Mouth</li>
                                 </ul>
-                                <button class="btn btn-success">JOIN NOW</button>
+                                <button class="btn btn-success btn-sm">JOIN NOW</button>
                             </div>
                         </div>
                     </div>

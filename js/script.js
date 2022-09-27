@@ -79,10 +79,25 @@ function showSidebar() {
   document.getElementById('sidebar').style.position = 'absolute';
 }
 
-
 function hideSidebar() {
   document.getElementById('sidebar').style.opacity = '0';
   document.getElementById('sidebar').style.width = '0';
   document.getElementById('sidebar').style.position = 'relative';
   document.getElementById('sidebar').style.visibility = 'hidden';
+}
+
+function showSearch() {
+  document.getElementById('searchbar').classList.remove('d-none');
+  document.getElementById('searchbarInput').focus();
+  document.getElementById('searchbarSmall').style.display = 'none';
+}
+
+function hideSearch() {
+  document.getElementById('searchbar').classList.add('d-none');
+}
+window.onclick = function () {
+  if(document.activeElement != document.getElementById('searchbarInput')) {
+    hideSearch();
+    document.getElementById('searchbarSmall').style.display = 'flex';
+  }
 }
