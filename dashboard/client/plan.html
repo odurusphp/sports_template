@@ -30,8 +30,10 @@
 
             <!-- Main page -->
             <div class="theme w-100 bg-light p-0" style="overflow: hidden;">
+                
+                <!-- Top Bar -->
                 <div class="w-100 bg-white d-flex p-2 fs-small flex-column">
-                    <div class="w-100 bg-white d-flex p-2 fs-small">
+                    <div class="w-100 d-flex fs-small">
                         <!-- Toggler -->
                         <div class="navbar-light me-3 d-md-none">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="showSidebar()">
@@ -41,9 +43,9 @@
     
                         <div class="d-flex flex-grow-1 justify-content-end">
                             <!-- Search bar -->
-                            <div id="searchbarSmall" class="input-group border bg-white w-auto overflow-hidden flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
+                            <div id="searchbarSmall" class="input-group border bg-white w-auto flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
                                 <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <span class="input-group-text bg-white border-0 btn" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
+                                <span class="input-group-text bg-white border-0 btn py-2 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
                             </div>
     
                             <!-- Cart -->
@@ -69,7 +71,7 @@
                     </div>
 
                     <!-- Search bar stretched-->
-                    <div id="searchbar" class="input-group border bg-white w-100 overflow-hidden d-none d-sm-none" style="border-radius: 40px;">
+                    <div id="searchbar" class="input-group border bg-white w-100 d-none d-sm-none mt-2" style="border-radius: 40px;">
                         <input type="text" id="searchbarInput" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <span class="input-group-text bg-white border-0 btn" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-secondary"></i></span>
                     </div>
