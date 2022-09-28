@@ -427,6 +427,16 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+.card-mw-small {
+  max-width: none;
+}
+
+@media screen and (min-width: 576px) {
+  .card-mw-small {
+    max-width: 230px;
+  }
+}
+
 
 /* Theme */
 /* Browser Compatibility */
