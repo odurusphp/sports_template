@@ -98,7 +98,7 @@ class DashboardTopbar extends HTMLElement {
                 <div class="d-flex flex-grow-1 justify-content-end">
                     <!-- Search bar -->
                     <div id="searchbarSmall" class="input-group border bg-white w-auto flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
-                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block bg-transparent" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <span class="input-group-text bg-transparent border-0 btn py-1 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-light fs-6"></i></span>
                     </div>
 
