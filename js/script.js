@@ -96,7 +96,7 @@ function hideSearch() {
   document.getElementById('searchbar').classList.add('d-none');
 }
 window.onclick = function () {
-  if(document.activeElement != document.getElementById('searchbarInput')) {
+if(document.getElementById('searchbarInput') && document.activeElement != document.getElementById('searchbarInput')) {
     hideSearch();
     document.getElementById('searchbarSmall').style.display = 'flex';
   }

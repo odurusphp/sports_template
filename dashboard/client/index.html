@@ -36,22 +36,21 @@
                 <!-- Top bar -->
                 <dashboard-top-bar></dashboard-top-bar>
                 
-                <div class="p-3 pt-2 vh-100 overflow-auto">
+                <div class="p-3 pt-2 vh-100 overflow-auto fs-small">
                     <p class="h3 m-0">Welcome Emmanuel</p>
                     <p>19th August, Friday</p>
                     
-                    <!-- Facilities -->
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-5 order-sm-last mb-3 mb-sm-0">
-                            <div class="card shadow-sm border-0 rounded-custom overflow-hidden justify-content-center">
-                                <img src="/img/calendar.png" alt="Booking chart" class="w-100 p-3">
+                    <div class="row m-0 mb-3">
+                        <!-- Calendar -->
+                        <div class="col-lg-5 col-sm-6 d-flex p-0 ps-sm-3 mb-3 mb-sm-0 order-sm-last">
+                            <div class="card shadow-sm border-0 rounded-custom overflow-hidden justify-content-center p-4 w-100">
+                                <img src="/img/calendar.png" alt="Calendar" class="w-100">
                             </div>
                         </div>
-                        
-                        <div class="col-sm-6 col-lg-7">
-                            <div class="card shadow-sm border-0 rounded-custom mb-3 px-2">
-                                    
-                                <p class="fw-bold mb-2 ps-2 pt-2">Facilities <span class="float-end me-2"><a href="facilities.html" class="theme-text text-decoration-none fw-light">See All</a></span></p>
+                        <!-- Facilities -->
+                        <div class="col-lg-7 col-sm-6 p-0">
+                            <div class="card shadow-sm border-0 rounded-custom h-100 overflow-hidden p-2">
+                                <p class="fw-bold mb-2 ps-2 pt-2">Facilities <span class="float-end me-2"><a href="facilities.html" class="theme-text text-decoration-none fw-normal">See All</a></span></p>
                                 <div class="pb-1 px-2 features text-nowrap">
                                     <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
                                         <div class="d-flex overflow-hidden rounded-custom">
@@ -99,10 +98,10 @@
                     </div>
 
                     <!-- List of bookings -->
-                    <div class="card shadow-sm border-0 rounded-custom p-2 mb-4 overflow-auto">
-                        <p class="fw-bold mb-2 ps-2 text-dark">Bookings</p>
+                    <div class="card shadow-sm border-0 rounded-custom mb-3 overflow-auto">
+                        <p class="fw-bold mb-2 p-3 ps-2">Bookings <span class="float-end me-2"><a href="bookings.html" class="theme-text text-decoration-none fw-normal">See All</a></span> </p>
                         <div class="d-flex flex-row features">
-                            <table class="table table-borderless table-striped text-center theme-text">
+                            <table class="table table-borderless table-striped text-center theme-text mb-0">
                                 <thead>
                                     <tr>
                                         <th scope="col" class="text-start">Facilities</th>
@@ -114,25 +113,25 @@
                                 </thead>
                                 <tbody class="text-secondary">
                                     <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Basketball</p> </td>
+                                        <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded" style="height: 60px; width: 60px;"> <p class="m-0 d-inline">Basketball</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00/hr </td>
-                                        <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
-                                    </tr>   
-                                    <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/astro-turf.png" alt="basketball" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
-                                        <td> 09-08-2022 </td>
-                                        <td> 09:00AM - 10:00AM </td>
-                                        <td> GH₵ 100.00/hr </td>
-                                        <td> <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
+                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successfull</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/swimming-2.png" alt="An image of a swimming pool" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Swimming</p> </td>
+                                        <td class="text-start"> <img src="/img/astro-turf.png" alt="basketball" class="rounded" style="height: 60px; width: 60px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00/hr </td>
-                                        <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
+                                        <td> <div class="rounded text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
+                                    </tr>
+                                    <tr class="align-middle text-nowrap">
+                                        <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded" style="height: 60px; width: 60px;"> <p class="m-0 d-inline">Basketball</p> </td>
+                                        <td> 09-08-2022 </td>
+                                        <td> 09:00AM - 10:00AM </td>
+                                        <td> GH₵ 100.00/hr </td>
+                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successfull</div> </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -140,60 +139,91 @@
                     </div>
 
                     <!-- Billing History -->
-                    <div class="card shadow-sm border-0 rounded-custom p-2 mb-5 overflow-auto">
-                        <div class="d-flex flex-column flex-md-row align-items-md-center mb-4">
-                            <div class="mb-3 mb-md-0">
-                                <p class="fw-bold m-0 ps-2 pt-2">Billing history</p>
+                    <div class="p-0 vh-100 overflow-auto pb-5">
+                        <div class="card shadow-sm border-0 rounded-custom p-0 mb-5 overflow-auto">
+                            <div class="d-flex flex-column flex-sm-row align-items-sm-center">
+                                <div class="mb-3 mb-sm-0">
+                                    <p class="fw-bold m-0 p-3 ps-2 pb-0">Billing history</p>
+                                    <p class="text-secondary m-0 fs-small p-3 ps-2 pt-0">Access all previous invoice</p>
+                                </div>
+                                <div class="flex-grow-1 d-flex justify-content-end align-items-sm-center me-3">
+                                    <div class="btn btn-sm fw-lighter me-2"><i class="fa-solid fa-sliders fs-6"></i> <span class="me-3">Date Filter</span></div>
+                                    <div class="btn btn-sm fw-lighter"><i class="fa-regular fa-pen-to-square fs-6"></i> <span>Generate Report</span></div>
+                                </div>
                             </div>
-                            <div class="flex-grow-1 d-flex justify-content-end align-items-md-center me-3">
-                                <div class="btn btn-sm fw-lighter me-2"><i class="fa-solid fa-sliders fs-6"></i> <span class="me-3">Date Filter</span></div>
-                                <div class="btn btn-sm fw-lighter"><i class="fa-regular fa-pen-to-square fs-6"></i> <span>Generate Report</span></div>
+                            <div class="d-flex flex-row features">
+                                <table class="table table-borderless table-striped text-center theme-text">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-start">Invoice</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-secondary">
+                                        <tr class="align-middle text-nowrap">
+                                            <td class="text-start d-flex align-middle"> 
+                                                <img src="/img/bball.png" alt="basketball" class="rounded me-3" style="height: 60px; width: 60px;"> 
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-light fs-small">#00053</p>
+                                                    <p class="p-0 text-secondary m-0">Basketball</p>
+                                                </div>
+                                            </td>
+                                            <td> 09-08-2022 </td>
+                                            <td> 09:00AM - 10:00AM </td>
+                                            <td> GH₵ 100.00/hr </td>
+                                            <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successfull</div> </td>
+                                        </tr>
+                                        <tr class="align-middle text-nowrap">
+                                            <td class="text-start d-flex align-middle"> 
+                                                <img src="/img/astro-turf.png" alt="basketball" class="rounded me-3" style="height: 60px; width: 60px;"> 
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-light fs-small">#00053</p>
+                                                    <p class="p-0 text-secondary m-0">Astro turf</p>
+                                                </div>
+                                            </td>
+                                            <td> 09-08-2022 </td>
+                                            <td> 09:00AM - 10:00AM </td>
+                                            <td> GH₵ 100.00/hr </td>
+                                            <td> <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
+                                        </tr>
+                                        <tr class="align-middle text-nowrap">
+                                            <td class="text-start d-flex align-middle"> 
+                                                <img src="/img/swimming-2.png" alt="basketball" class="rounded me-3" style="height: 60px; width: 60px;"> 
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-light fs-small">#00053</p>
+                                                    <p class="p-0 text-secondary m-0">Swimming</p>
+                                                </div>
+                                            </td>
+                                            <td> 09-08-2022 </td>
+                                            <td> 09:00AM - 10:00AM </td>
+                                            <td> GH₵ 100.00/hr </td>
+                                            <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successfull</div> </td>
+                                        </tr>
+                                        <tr class="align-middle text-nowrap">
+                                            <td class="text-start d-flex align-middle"> 
+                                                <img src="/img/astro-turf.png" alt="basketball" class="rounded me-3" style="height: 60px; width: 60px;"> 
+                                                <div class="d-inline-flex flex-column justify-content-center">
+                                                    <p class="p-0 m-0 fw-light fs-small">#00053</p>
+                                                    <p class="p-0 text-secondary m-0">Astro turf</p>
+                                                </div>
+                                            </td>
+                                            <td> 09-08-2022 </td>
+                                            <td> 09:00AM - 10:00AM </td>
+                                            <td> GH₵ 100.00/hr </td>
+                                            <td> <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                            <!-- Page numbering -->
+                            <div class="text-secondary fs-small">
+                                <p class="float-end me-3"> <a href="billing.html" class="theme-text text-decoration-none">See All</a></p>
                             </div>
                         </div>
-                        <div class="d-flex flex-row features">
-                            <table class="table table-borderless table-striped text-center theme-text">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="text-start">Invoice</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Time</th>
-                                        <th scope="col">Amount</th>
-                                        <th scope="col">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-secondary">
-                                    <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Basketball</p> </td>
-                                        <td> 09-08-2022 </td>
-                                        <td> 09:00AM - 10:00AM </td>
-                                        <td> GH₵ 100.00/hr </td>
-                                        <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
-                                    </tr>
-                                    <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/astro-turf.png" alt="basketball" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
-                                        <td> 09-08-2022 </td>
-                                        <td> 09:00AM - 10:00AM </td>
-                                        <td> GH₵ 100.00/hr </td>
-                                        <td> <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
-                                    </tr>
-                                    <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/swimming-2.png" alt="An image of a swimming pool" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Swimming</p> </td>
-                                        <td> 09-08-2022 </td>
-                                        <td> 09:00AM - 10:00AM </td>
-                                        <td> GH₵ 100.00/hr </td>
-                                        <td> <div class="rounded fs-small text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
-                                    </tr>
-                                    <tr class="align-middle text-nowrap">
-                                        <td class="text-start"> <img src="/img/swimming-2.png" alt="An image of a swimming pool" class="rounded me-2" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-Turf</p> </td>
-                                        <td> 09-08-2022 </td>
-                                        <td> 09:00AM - 10:00AM </td>
-                                        <td> GH₵ 100.00/hr </td>
-                                        <td> <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
                     </div>
                 </div>
             </div>

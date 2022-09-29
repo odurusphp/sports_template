@@ -97,20 +97,20 @@ class DashboardTopbar extends HTMLElement {
 
                 <div class="d-flex flex-grow-1 justify-content-end">
                     <!-- Search bar -->
-                    <div id="searchbarSmall" class="input-group border bg-white w-auto flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
+                    <div id="searchbarSmall" class="input-group border-visible-sm-none bg-white w-auto flex-sm-grow-1 d-sm-flex" style="border-radius: 40px;">
                         <input type="text" style="border-radius: inherit; border-top-right-radius: 0; border-bottom-right-radius: 0;" class="form-control border-0 me-2 py-1 fs-small d-none d-sm-block bg-transparent" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <span class="input-group-text bg-transparent border-0 btn py-1 py-sm-1" onclick="showSearch()" id="basic-addon2" style="border-radius: inherit;"><i class="fa fa-search text-light fs-6"></i></span>
                     </div>
 
                     <!-- Cart -->
                     <div class="align-self-center mx-2 position-relative btn p-0">
-                        <i class="fa-solid fa-cart-shopping text-light fs-6"></i>
+                        <i class="fa-solid fa-cart-shopping text-light fs-custom"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 3px;"> 2 </span>
                     </div>
 
                     <!-- Notifications -->
                     <div class="align-self-center mx-3 position-relative btn p-0">
-                        <i class="fa-solid fa-bell text-light fs-6"></i>
+                        <i class="fa-solid fa-bell text-light fs-custom"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-green fs-small d-flex justify-content-center align-items-center" style="height: 12px; width: 12px; font-size: 10px; margin-top: 4px; margin-left: -2px;"> 9 </span>
                     </div>
 

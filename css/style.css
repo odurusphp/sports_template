@@ -69,6 +69,14 @@
 .rounded-custom {
   border-radius: 15px;
 }
+.border-visible-sm-none {
+  border: none;
+}
+@media screen and (min-width: 576px) {
+  .border-visible-sm-none {
+    border: 1px solid rgb(222, 226, 230);
+  }
+}
 
 /* Colors */
 .bg-black {
@@ -120,6 +128,22 @@
 }
 .transition {
   transition: .5s all;
+}
+
+/* Fonts */
+.fs-small {
+  font-size: medium;
+}
+.fs-custom {
+  font-size: larger;
+}
+@media screen and (min-width: 576px) {
+  .fs-small {
+    font-size: 13px;
+  }
+  .fs-custom {
+    font-size: medium;
+  }
 }
 
 /* Nav bar */
@@ -185,9 +209,6 @@
 .carousel-caption--bold {
   font-weight: 900;
   font-size: 50px;
-}
-.fs-small {
-  font-size: 13px;
 }
 .indicator--round {
   height: 15px;
