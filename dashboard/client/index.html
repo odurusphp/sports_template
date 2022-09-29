@@ -28,55 +28,71 @@
                     <a href="profile.html" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-gears text-secondary me-2"></i> Profile Settings</a></li>
                 </ul>
             </div>
-
-
+            
+            
             <!-- Main page -->
             <div class="theme w-100 bg-light p-0" style="overflow: hidden;">
-
+                
                 <!-- Top bar -->
                 <dashboard-top-bar></dashboard-top-bar>
-
+                
                 <div class="p-3 pt-2 vh-100 overflow-auto">
                     <p class="h3 m-0">Welcome Emmanuel</p>
                     <p>19th August, Friday</p>
-
+                    
                     <!-- Facilities -->
-                    <div class="card shadow-sm border-0 rounded-custom mb-3">
-                        <span><p class="fw-bold mb-2 ps-2 pt-2 text-dark">Facilities <a href="#" class="float-end text-dark fs-small me-5 text-decoration-none">See All</a></p></span>
-                        <div class="col d-flex pb-1 px-2 features text-nowrap mb-3">
-                            <div class="card bg-light-custom border-0 overflow-hidden rounded-custom me-3" style="width: 220px;">
-                                <div class="d-flex overflow-hidden rounded-custom">
-                                    <img src="/img/dashboard-turf.png" class="w-100 hover-enlarge transition" alt="Astro turf">
-                                </div>
-                                <div class="col card-body ps-2 pt-1">
-                                    <p class="m-0 fw-bold">GYM</p>
-                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                    <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold mt-3 bg-danger-opacity">Booked</div>
-                                </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-5 order-sm-last mb-3 mb-sm-0">
+                            <div class="card shadow-sm border-0 rounded-custom overflow-hidden justify-content-center">
+                                <img src="/img/calendar.png" alt="Booking chart" class="w-100 p-3">
                             </div>
-                            <div class="card bg-light-custom border-0 overflow-hidden rounded-custom me-3" style="width: 220px;">
-                                <div class="d-flex overflow-hidden rounded-custom">
-                                    <img src="/img/dashboard_basketball.png" class="w-100 hover-enlarge transition" alt="An image of a basketball court">
-                                </div>
-                                <div class="col card-body ps-2 pt-1">
-                                    <p class="m-0 fw-bold">GYM</p>
-                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                    <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity">Available</div>
-                                </div>
-                            </div>
-                            <div class="card bg-light-custom border-0 overflow-hidden rounded-custom me-3" style="width: 220px;">
-                                <div class="d-flex overflow-hidden rounded-custom">
-                                    <img src="/img/dashboard_tennis.png" class="w-100 hover-enlarge transition" alt="An image of a lawn tennis court">
-                                </div>
-                                <div class="col card-body ps-2 pt-1">
-                                    <p class="m-0 fw-bold">GYM</p>
-                                    <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                    <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity"> Available </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border-1 overflow-hidden p-3 border border-1 border-dark rounded-custom" style="width: 220px;">
-                                <div class="d-flex overflow-visible rounded-custom">
-                                    <img src="/img/calendar.png" class="w-100" alt="An image of a Gym">
+                        </div>
+                        
+                        <div class="col-sm-6 col-lg-7">
+                            <div class="card shadow-sm border-0 rounded-custom mb-3 px-2">
+                                    
+                                <p class="fw-bold mb-2 ps-2 pt-2">Facilities <span class="float-end me-2"><a href="facilities.html" class="theme-text text-decoration-none fw-light">See All</a></span></p>
+                                <div class="pb-1 px-2 features text-nowrap">
+                                    <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                        <div class="d-flex overflow-hidden rounded-custom">
+                                            <img src="/img/dashboard-turf.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                        </div>
+                                        <div class="card-body ps-2 pt-1">
+                                            <p class="m-0 fw-bold">GYM</p>
+                                            <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                            <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold mt-3 bg-danger-opacity">Booked</div>
+                                        </div>
+                                    </div>
+                                    <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                        <div class="d-flex overflow-hidden rounded-custom">
+                                            <img src="/img/dashboard_basketball.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                        </div>
+                                        <div class="card-body ps-2 pt-1">
+                                            <p class="m-0 fw-bold">GYM</p>
+                                            <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                            <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity">Available</div>
+                                        </div>
+                                    </div>
+                                    <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                        <div class="d-flex overflow-hidden rounded-custom">
+                                            <img src="/img/dashboard_tennis.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                        </div>
+                                        <div class="card-body ps-2 pt-1">
+                                            <p class="m-0 fw-bold">GYM</p>
+                                            <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                            <div class="rounded fs-small text-success d-inline-block px-4 fw-bold mt-3 bg-success-opacity"> Available </div>
+                                        </div>
+                                    </div>
+                                    <div class="card d-inline-block bg-light-custom border-0 overflow-hidden rounded-custom me-2" style="width: 220px;">
+                                        <div class="d-flex overflow-hidden rounded-custom">
+                                            <img src="/img/dashboard_gym.png" class="w-100 hover-enlarge transition" alt="Astro turf">
+                                        </div>
+                                        <div class="card-body ps-2 pt-1">
+                                            <p class="m-0 fw-bold">GYM</p>
+                                            <p class="m-0 text-wrap fw-light lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                            <div class="rounded fs-small text-danger d-inline-block px-4 fw-bold mt-3 bg-danger-opacity">Booked</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
