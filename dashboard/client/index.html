@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/fontawesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calendar.css">
     
     <script src="/js/components.js"></script>
 </head>
@@ -43,12 +44,14 @@
                     <div class="row m-0 mb-3">
                         <!-- Calendar -->
                         <div class="col-lg-5 col-sm-6 d-flex p-0 ps-sm-3 mb-3 mb-sm-0 order-sm-last">
-                            <div class="card shadow-sm border-0 rounded-custom overflow-hidden justify-content-center p-4 w-100">
-                                <img src="/img/calendar.png" alt="Calendar" class="w-100">
+                            <div class="card shadow-sm border-0 rounded-custom justify-content-center w-100 p-1 align-items-center" style="min-width: 230px;">
+                                <div class="calendar m-0 h-100"></div>
+                                <!-- <img src="/img/calendar.png" alt="Calendar" class="w-100"> -->
                             </div>
                         </div>
+
                         <!-- Facilities -->
-                        <div class="col-lg-7 col-sm-6 p-0">
+                        <div class="col-lg-7 col-sm-6 p-0 flex-shrink-1">
                             <div class="card shadow-sm border-0 rounded-custom h-100 overflow-hidden p-2">
                                 <p class="fw-bold mb-2 ps-2 pt-2">Facilities <span class="float-end me-2"><a href="facilities.html" class="theme-text text-decoration-none fw-normal">See All</a></span></p>
                                 <div class="pb-1 px-2 features text-nowrap">
@@ -232,5 +235,6 @@
 
     <script src="/js/bootstrap.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/calendar.js"></script>
 </body>
 </html>

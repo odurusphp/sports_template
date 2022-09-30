@@ -72,24 +72,29 @@ rangeInput.forEach((input) => {
 
 
 // Dashboard
+const sidebar = document.getElementById('sidebar');
 function showSidebar() {  
-  document.getElementById('sidebar').style.visibility = 'visible';
-  document.getElementById('sidebar').style.width = '100%';
-  document.getElementById('sidebar').style.opacity = '1';
-  document.getElementById('sidebar').style.position = 'absolute';
+  sidebar.style.visibility = 'visible';
+  sidebar.style.width = '100%';
+  sidebar.style.opacity = '1';
+  sidebar.style.position = 'absolute';
 }
 
 function hideSidebar() {
-  document.getElementById('sidebar').style.opacity = '0';
-  document.getElementById('sidebar').style.width = '0';
-  document.getElementById('sidebar').style.position = 'relative';
-  document.getElementById('sidebar').style.visibility = 'hidden';
+  sidebar.style.opacity = '0';
+  sidebar.style.width = '0';
+  sidebar.style.position = 'relative';
+  sidebar.style.visibility = 'hidden';
 }
 
+// Search bar
+const searchbar = document.getElementById('searchbar');
+const searchIcon = document.getElementById('searchbarSmall');
+
 function showSearch() {
-  document.getElementById('searchbar').classList.remove('d-none');
+  searchbar.classList.remove('d-none');
   document.getElementById('searchbarInput').focus();
-  document.getElementById('searchbarSmall').style.display = 'none';
+  searchIcon.style.display = 'none';
 }
 
 function hideSearch() {
@@ -98,6 +103,6 @@ function hideSearch() {
 window.onclick = function () {
 if(document.getElementById('searchbarInput') && document.activeElement != document.getElementById('searchbarInput')) {
     hideSearch();
-    document.getElementById('searchbarSmall').style.display = 'flex';
+    searchIcon.style.display = 'flex';
   }
 }
