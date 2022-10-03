@@ -2,7 +2,7 @@
 
 :root {
     --calendar-bg-color: #FFF;
-    --calendar-font-color: #262829;
+    --calendar-font-color: #344767;
     --weekdays-border-bottom-color: #404040;
     --calendar-date-hover-color: #0db93e;
     --calendar-current-date-color: #1b1f21;
@@ -92,7 +92,7 @@
     border-radius: 10px;
     width: 80%;
     margin: auto;
-    color: #FFF;
+    color: #F7F8FC;
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-year-month {

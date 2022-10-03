@@ -4,30 +4,30 @@ class Header extends HTMLElement {
       this.innerHTML = `
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-2" id="navbar">
-            <div class="container">
-                <a class="navbar-brand navbar-brand-modified" href="#"><img src="img/logo.png" class="w-100" alt=""></a>
+            <div class="container-md">
+                <a class="navbar-brand navbar-brand-modified" href="index.html"><img src="img/logo.png" class="w-100" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="makeDark()">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse text-center" id="navbarScroll">
                 <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: auto;">
                     <li class="nav-item me-lg-4">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html" id="home">Home</a>
                     </li>
                     <li class="nav-item  me-lg-4">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.html" id="about">About</a>
                     </li>
                     <li class="nav-item  me-lg-4">
-                    <a class="nav-link" href="our-facilities.html">Facilities</a>
+                    <a class="nav-link" href="our-facilities.html" id="facilities">Facilities</a>
                     </li>
                     <li class="nav-item  me-lg-4">
-                    <a class="nav-link" href="our-shop.html">Shop</a>
+                    <a class="nav-link" href="our-shop.html" id="shop">Shop</a>
                     </li>
                     <li class="nav-item  me-lg-4">
-                    <a class="nav-link" href="contact-us.html">Contact</a>
+                    <a class="nav-link" href="contact-us.html" id="contact">Contact</a>
                     </li>
                     <li class="nav-item  me-lg-4">
-                    <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="nav-link" href="cart.html" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                 </ul>
                 <i class="fa fa-search text-success"></i>
@@ -44,9 +44,9 @@ class Footer extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `    
         <!-- Footer -->
-        <section class="container text-secondary py-4">
+        <section class="container-md text-secondary py-4">
             <div class="row">
-                <div class="col-md mb-4">
+                <div class="col-sm mb-4">
                     <span class="h4 mb-md-5 d-block text-white">Links</span>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Social media</a></li>
@@ -54,7 +54,7 @@ class Footer extends HTMLElement {
                         <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Overons</a></li>
                     </ul>           
                 </div>
-                <div class="col-md mb-4">
+                <div class="col-sm mb-4">
                     <span class="h4 mb-md-5 d-block text-white">Company</span>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Terms & condition</a></li>
@@ -62,14 +62,14 @@ class Footer extends HTMLElement {
                         <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Policy</a></li>
                     </ul>                
                 </div>
-                <div class="col-md mb-4">
+                <div class="col-sm mb-4">
                     <span class="h4 mb-md-5 d-block text-white">Get in touch</span>
                     <ul class="list-unstyled text-white">
                         <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Overons</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none link-secondary">Social media</a></li>
                     </ul>            
                 </div>
-                <div class="col-md d-flex flex-column justify-content-between mb-4 order-md-first text-center text-md-start">
+                <div class="col-sm d-flex flex-column justify-content-between mb-4 order-sm-first text-center text-md-start">
                     <a class="navbar-brand" href="#"><img src="img/logo.png" class="w-100" style="max-width: 8rem;" alt=""></a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div><i class="fa-brands fa-facebook-f me-3 fs-3"></i> <i class="fa-brands fa-twitter me-3 fs-3"></i> <i class="fa-brands fa-instagram fs-3"></i></div>          
@@ -135,8 +135,56 @@ class DashboardTopbar extends HTMLElement {
 }
 
 
+// Admin dashboard sidebar
+class AdminSidebar extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `    
+        <!-- Sidebar -->
+        <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
+            <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
+            <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
+            <ul class="list-unstyled mt-4 p-3">
+                <a href="index.html" id="dashboard" class="px-5 my-1 fw-bold py-1 fs-small text-decoration-none link-secondary w-100 btn text-start text-nowrap"> <i class="fa-solid fa-layer-group me-2"></i> Dashboard</a>
+                <a href="staff.html" id="staff" class="px-5 my-1 fw-bold py-1 fs-small text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-user-group me-2"></i> Staff</a></li>
+                <a href="facilities.html" id="sidebarFacilities" class="px-5 my-1 fw-bold py-1 fs-small text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark me-2"></i> Facilities</a></li>
+                <a href="bookings.html" id="bookings" class="px-5 my-1 fw-bold py-1 fs-small text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt me-2"></i> Bookings</a></li>
+                <a href="members.html" id="members" class="px-5 my-1 fw-bold py-1 fs-small text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-regular fa-id-card me-2"></i> Members</a></li>
+                <a href="accounts.html" id="accounts" class="px-5 fw-bold py-1 my-1 fs-small text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-circle-user me-2"></i> Account</a></li>
+                <a href="#" id="settings" class="px-5 fw-bold py-1 my-1 fs-small text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-gears me-2"></i> Settings</a></li>
+            </ul>
+        </div>
+      `;
+    }
+}
+
+
+// Client dashboard sidebar
+class ClientSidebar extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `    
+        <!-- Sidebar -->
+        <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
+                <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
+                <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
+                <ul class="list-unstyled mt-4 p-3">
+                    <a href="index.html" id="dashboard" class="px-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary w-100 btn text-start text-nowrap"> <i class="fa-solid fa-layer-group me-2"></i> Dashboard</a>
+                    <a href="facilities.html" id="sidebarFacilities" class="px-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark me-2"></i> Facilities</a></li>
+                    <a href="bookings.html" id="bookings" class="px-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-receipt me-2"></i> Bookings</a></li>
+                    <a href="plan.html" id="plan" class="px-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start text-nowrap"> <i class="fa-solid fa-id-card me-2"></i> Membership plan</a></li>
+                    <a href="billing.html" id="billing" class="px-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-credit-card text me-2"></i> Billings</a></li>
+                    <a href="profile.html" id="profile" class="px-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start text-nowrap"> <i class="fa-solid fa-gears me-2"></i> Profile Settings</a></li>
+                </ul>
+            </div>
+      `;
+    }
+}
+
+
 // Register components
 customElements.define('page-header', Header);
 customElements.define('page-footer', Footer);
 
 customElements.define('dashboard-top-bar', DashboardTopbar);
+
+customElements.define('admin-sidebar', AdminSidebar);
+customElements.define('client-sidebar', ClientSidebar);
