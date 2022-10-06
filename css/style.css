@@ -115,6 +115,7 @@
 /* Colors */
 .bg-black {
   background-color: black;
+  color: #888383;
 }
 .bg-green {
   background-color: var(--primary) !important;
@@ -353,13 +354,12 @@
   filter: brightness(70%);
 }
 .background-img-short-container {
-  width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 760px) {
   .background-img-short-container {
-    max-height: 30vw;
+    max-height: 50vh;
   }
 }
 
@@ -404,10 +404,6 @@
   text-align: center;
   border: 1px solid #000;
   -moz-appearance: textfield;
-}
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }
 .price-input .separator {
   width: 130px;
