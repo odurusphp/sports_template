@@ -110,18 +110,18 @@ if(document.getElementById('searchbarInput') && document.activeElement != docume
 }
 
 // Components styling
-export class Page {
-  constructor() {
+// export class Page {
+//   constructor() {
     
-  }
-  setCurrentPage(pageID) {
-    document.getElementById(pageID).classList.add('active');
-  }
-  setActiveSidebar(sidebarID) {
-    // alert('hello world');
-    document.getElementById(sidebarID).classList.add('bg-secondary', 'text-white');
-  }
-}
+//   }
+//   setCurrentPage(pageID) {
+//     document.getElementById(pageID).classList.add('active');
+//   }
+//   setActiveSidebar(sidebarID) {
+//     // alert('hello world');
+//     document.getElementById(sidebarID).classList.add('bg-secondary', 'text-white');
+//   }
+// }
 
-export const page = new Page();
+// export const page = new Page();
 
