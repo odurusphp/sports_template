@@ -73,18 +73,20 @@ rangeInput.forEach((input) => {
 
 // Dashboard
 const sidebar = document.getElementById('sidebar');
-function showSidebar() {  
-  sidebar.style.visibility = 'visible';
-  sidebar.style.width = '100%';
-  sidebar.style.opacity = '1';
-  sidebar.style.position = 'absolute';
-}
-
-function hideSidebar() {
-  sidebar.style.opacity = '0';
-  sidebar.style.width = '0';
-  sidebar.style.position = 'relative';
-  sidebar.style.visibility = 'hidden';
+if(sidebar) {
+  function showSidebar() {  
+    sidebar.style.visibility = 'visible';
+    sidebar.style.width = '100%';
+    sidebar.style.opacity = '1';
+    sidebar.style.position = 'absolute';
+  }
+  
+  function hideSidebar() {
+    sidebar.style.opacity = '0';
+    sidebar.style.width = '0';
+    sidebar.style.position = 'relative';
+    sidebar.style.visibility = 'hidden';
+  }
 }
 
 // Search bar
@@ -106,3 +108,20 @@ if(document.getElementById('searchbarInput') && document.activeElement != docume
     searchIcon.style.display = 'flex';
   }
 }
+
+// Components styling
+export class Page {
+  constructor() {
+    
+  }
+  setCurrentPage(pageID) {
+    document.getElementById(pageID).classList.add('active');
+  }
+  setActiveSidebar(sidebarID) {
+    // alert('hello world');
+    document.getElementById(sidebarID).classList.add('bg-secondary', 'text-white');
+  }
+}
+
+export const page = new Page();
+

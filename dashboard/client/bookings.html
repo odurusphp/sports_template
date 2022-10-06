@@ -16,18 +16,7 @@
     <div class="container-fluid p-0" style="height: 100vh;">
         <div class="d-flex">
             <!-- Sidebar -->
-            <div class="bg-dark vh-100 sidebar text-center text-secondary" id="sidebar">
-                <button type="button" class="btn-close btn-close-white float-end me-2 mt-2 d-md-none" aria-label="Close" onclick="hideSidebar()"></button>
-                <a class="navbar-brand navbar-brand-modified" href="#"><img src="/img/logo.png" class="w-50 mt-3" alt=""></a>
-                <ul class="list-unstyled mt-4 p-3">
-                    <a href="index.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-layer-group text-secondary me-2"></i> Dashboard</a></li>
-                    <a href="facilities.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-landmark text-secondary me-2"></i> Facilities</a></li>
-                    <a href="bookings.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary text-white w-100 btn text-start bg-secondary text-nowrap"> <i class="fa-solid fa-receipt text-white me-2"></i> Bookings</a>
-                    <a href="plan.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-id-card text-secondary me-2"></i> Membership plan</a></li>
-                    <a href="billing.html" class="ps-5 my-1 fw-bold py-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-credit-card text text-secondary me-2"></i> Billings</a></li>
-                    <a href="profile.html" class="ps-5 fw-bold py-1 my-1 fs-small  text-decoration-none link-secondary btn w-100 text-start"> <i class="fa-solid fa-gears text-secondary me-2"></i> Profile Settings</a></li>
-                </ul>
-            </div>
+            <client-sidebar></client-sidebar>
 
 
             <!-- Main page -->
@@ -70,49 +59,49 @@
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00 </td>
-                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
+                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center bg-opacity-max">Successful</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
                                         <td class="text-start"> <img src="/img/astro-turf.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00 </td>
-                                        <td> <div class="rounded text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
+                                        <td> <div class="rounded text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center bg-opacity-max">Unsuccessful</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
                                         <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Basketball</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00 </td>
-                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
+                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center bg-opacity-max">Successful</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
                                         <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Basketball</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00 </td>
-                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
+                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center bg-opacity-max">Successful</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
                                         <td class="text-start"> <img src="/img/astro-turf.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00 </td>
-                                        <td> <div class="rounded text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
+                                        <td> <div class="rounded text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center bg-opacity-max">Unsuccessful</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
                                         <td class="text-start"> <img src="/img/bball.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Basketball</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00 </td>
-                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center">Successful</div> </td>
+                                        <td> <div class="rounded text-success d-inline-block px-4 fw-bold bg-success-opacity w-100 text-center bg-opacity-max">Successful</div> </td>
                                     </tr>
                                     <tr class="align-middle text-nowrap">
                                         <td class="text-start"> <img src="/img/astro-turf.png" alt="basketball" class="rounded" style="height: 40px; width: 40px;"> <p class="m-0 d-inline">Astro-turf</p> </td>
                                         <td> 09-08-2022 </td>
                                         <td> 09:00AM - 10:00AM </td>
                                         <td> GH₵ 100.00 </td>
-                                        <td> <div class="rounded text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center">Unsuccessful</div> </td>
+                                        <td> <div class="rounded text-danger d-inline-block px-4 fw-bold bg-danger-opacity w-100 text-center bg-opacity-max">Unsuccessful</div> </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -129,6 +118,12 @@
     </div>
 
     <script src="/js/bootstrap.js"></script>
-    <script src="/js/script.js"></script>
+    <script type="module" src="/js/script.js"></script>
+    <script type="module">
+        import {page} from '/js/script.js';
+        window.onload = ()=> {
+            page.setActiveSidebar('bookings');
+        }
+    </script>
 </body>
 </html>
