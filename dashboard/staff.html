@@ -140,11 +140,10 @@
     </div>
 
     <script src="/js/bootstrap.js"></script>
-    <script type="module" src="/js/script.js"></script>
-    <script type="module">
-        import {page} from '/js/script.js';
-        window.onload = ()=> {
-            page.setActiveSidebar('staff');
+    <script src="/js/script.js"></script>
+    <script type="text/javascript">
+        if(document.getElementById('sidebar')) {
+            document.getElementById('staff').classList.add('bg-secondary', 'text-white');
         }
     </script>
 </body>
