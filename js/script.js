@@ -109,19 +109,41 @@ if(document.getElementById('searchbarInput') && document.activeElement != docume
   }
 }
 
-// Components styling
-// export class Page {
-//   constructor() {
-    
-//   }
-//   setCurrentPage(pageID) {
-//     document.getElementById(pageID).classList.add('active');
-//   }
-//   setActiveSidebar(sidebarID) {
-//     // alert('hello world');
-//     document.getElementById(sidebarID).classList.add('bg-secondary', 'text-white');
-//   }
+
+// Horizonal Scrolling
+// document.getElementById()
+
+// function SlideLeft(containerID) {
+//   document.getElementById(containerID).scrollLeft += 10;
+// }
+// function SlideRight(containerID) {
+//   document.getElementById(containerID).scrollLeft -= 10;
 // }
 
-// export const page = new Page();
+var button = document.getElementById('slide');
+button.onclick = function () {
+    var container = document.getElementById('scrollContainer');
+    sideScroll(container,'right',25,100,10);
+};
+
+var back = document.getElementById('slideBack');
+back.onclick = function () {
+    var container = document.getElementById('scrollContainer');
+    sideScroll(container,'left',25,100,10);
+};
+
+function sideScroll(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
 
